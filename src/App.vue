@@ -1,18 +1,70 @@
 <script setup lang="ts">
-import Home from './components/Home.vue'
+    import Home from './components/Home.vue'
 </script>
 
 <template>
-    <nav>
-	<RouterLink to="/">Go to Home</RouterLink>
-	<RouterLink to="/about">Go to About</RouterLink>
-	<RouterLink to="/games">Go to Games</RouterLink>
-    </nav>
+    <header id="nav-header"> 
+	<div id="nav-inner" class="set-ratio">
+	    <img alt="Logo" />
+	    <nav>
+		<ul>
+		    <li>
+			<RouterLink to="/">Home</RouterLink>
+		    </li>
+		    <li>
+			<RouterLink to="/about">About</RouterLink>
+		    </li>
+		    <li>
+			<RouterLink to="/games">Games</RouterLink>
+		    </li>
+		</ul>
+	    </nav>
+	</div>
+    </header>
     <main>
-	<RouterView />
+	<RouterView class="set-ratio" />
     </main>
+    <footer>
+	<div id="main-footer" class="set-ratio">	
+	    <p>© lunaerem</p>
+	    <button id="src-btn">Website Source</button>
+	</div>
+    </footer>
 </template>
 
 <style scoped>
+#nav-header {
+    position: fixed;
+    width: 100%;
+    background-color: green;
+}
 
+#nav-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav {
+
+
+    ul {
+	list-style: none;
+	display: flex;
+	gap: 0.5em;
+    }
+}
+
+#main-footer {
+    border-top: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#src-btn {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 </style>
