@@ -9,7 +9,7 @@ import NotFound from '../error/NotFound.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-	{ path: '/', component: Home },
+	{ path: '/', alias: '/home', component: Home },
 	{ path: '/about', component: About },
 	{ path: '/games', component: Games },
 	{ path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound }

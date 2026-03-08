@@ -3,7 +3,9 @@
 </script>
 
 <template>
-    Games
+    <div>
+	Games
+    </div>
 </template>
 
 <style scoped>
