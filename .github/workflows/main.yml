@@ -1,0 +1,19 @@
+name: Build Website
+on:
+  push:
+    branches:
+    -  main
+jobs:
+  vue-build-deploy:
+    name: deploy to github pages
+    runs-on: ubuntu-22.04
+    steps:
+    -  name: Checkout Repo
+       uses: actions/checkout@v4
+    -  name: Clean install dependencies and build
+       shell: bash
+       run: |
+         npm ci
+         npm run build
+         echo "Finished building"
+      
