@@ -19,7 +19,7 @@ jobs:
     -  name: Configure Pages
        uses: actions/configure-pages@v5
     -  name: Upload Pages Artifacts
-       uses: actions/upload-pages-artifacts@v4
+       uses: actions/upload-pages-artifact@v4
        with:
           # Upload entire repository
           path: './dist'
