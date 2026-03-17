@@ -26,7 +26,7 @@
     <footer>
 	<div id="main-footer" class="set-ratio">	
 	    <p>© lunaerem</p>
-	    <button id="src-btn">Website Source</button>
+	    <button id="src-btn" onclick="window.open('https://github.com/lunaerem/series-tracker', '_blank')">Website Source</button>
 	</div>
     </footer>
 </template>
