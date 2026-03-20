@@ -1,5 +1,20 @@
 <script setup lang="ts">
-import toggleModal from './modal.ts';
+import { ref, provide } from 'vue';
+
+const dialogTitle = ref(null);
+
+function toggleModal(title?) {
+    const modal = document.getElementById("modal");
+
+    if(modal.open) {
+	modal.close();
+    } else {
+	dialogTitle.value = title;
+	modal.showModal();
+    }
+}
+
+provide('toggle', toggleModal);
 </script>
 
 <template>
@@ -29,9 +44,9 @@ import toggleModal from './modal.ts';
 	    <p>© lunaerem</p>
 	    <button id="src-btn" onclick="window.open('https://github.com/lunaerem/series-tracker', '_blank')">Website Source</button>
 	</div>
-    </footer>
+    </footer> 
     <dialog id="modal" closedby="any">
-	<h2>Content!</h2>
+	<h2>{{ dialogTitle }}</h2>
 	<button @click="toggleModal()">Close</button>
     </dialog>
 </template>

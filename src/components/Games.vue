@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import toggleModal from '../modal.ts';
+import { inject } from 'vue';
+
+const toggleModal = inject('toggle');
 </script>
 
 <template>
@@ -8,8 +10,16 @@ import toggleModal from '../modal.ts';
 	    Games
 	</div>
 	<div>
-	    <button @click="toggleModal()">Popup Test</button>
-	</div>
+	    <ul>
+		<li>
+		    <RouterLink to="/games/game1">Game 1</RouterLink>
+		</li>
+		<li>
+		    <RouterLink to="/games/game2">Game 2</RouterLink>
+		</li>
+	    </ul>
+	    <button @click="toggleModal('Games')">Popup Test</button>
+	</div>	
     </div>
 </template>
 
