@@ -73,6 +73,16 @@ button:focus-visible {
 */
 #app {
 }
+
+#modal {
+    /*color: blue;*/
+}
+
+#modal::backdrop {
+    background: rgb(0 0 0 / 0.2);
+    backdrop-filter: blur(4px);
+}
+
 /*
 @media (prefers-color-scheme: light) {
   :root {

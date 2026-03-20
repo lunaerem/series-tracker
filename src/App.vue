@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import toggleModal from './modal.ts';
 </script>
 
 <template>
@@ -29,6 +30,10 @@
 	    <button id="src-btn" onclick="window.open('https://github.com/lunaerem/series-tracker', '_blank')">Website Source</button>
 	</div>
     </footer>
+    <dialog id="modal" closedby="any">
+	<h2>Content!</h2>
+	<button @click="toggleModal()">Close</button>
+    </dialog>
 </template>
 
 <style scoped>
@@ -66,6 +71,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100dvh;
 }
 
@@ -73,4 +79,5 @@ nav {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
 </style>
