@@ -37,7 +37,7 @@ provide('toggle', toggleModal);
 	</div>
     </header>
     <main>
-	<RouterView class="set-ratio" id="content-container" />
+	<RouterView  />
     </main>
     <footer>
 	<div id="main-footer" class="set-ratio">	
@@ -80,14 +80,6 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-#content-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100dvh;
 }
 
 #src-btn {

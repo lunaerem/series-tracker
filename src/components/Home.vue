@@ -3,9 +3,7 @@
 
 <template>
     <div>
-	<div>
-	    Home
-	</div>
+	Home
     </div>
 </template>
 

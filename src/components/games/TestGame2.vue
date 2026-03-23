@@ -6,12 +6,10 @@ const toggleModal = inject('toggle');
 
 <template>
     <div>
-	<div>
-	    Test Game #2
-	</div>
-	<div>
-	    <button @click="toggleModal('Game2')">Popup Test</button>
-	</div>
+	Test Game #2
+    </div>
+    <div>
+	<button @click="toggleModal('Game2')">Popup Test</button>
     </div>
 </template>
 
