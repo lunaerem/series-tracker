@@ -6,9 +6,16 @@ const toggleModal = inject('toggle');
 
 <template>
     <div>
-	Games
+	Games - Splash Header
     </div>
+    <section>
+	Brief description
+    </section>
+    <section>
+	Game listing
+    </section>
     <div>
+	This is just testing stuff, delete later
 	<ul>
 	    <li>
 		<RouterLink to="/games/game1">Game 1</RouterLink>

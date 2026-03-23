@@ -3,8 +3,17 @@
 
 <template>
     <div>
-	Home
+	Home - Splash Stuff
     </div>
+    <section>
+	Quick About
+    </section>
+    <section>
+	Section about reaching out for errors, etc.
+    </section>
+    <section>
+	Disclaimers
+    </section>
 </template>
 
 <style scoped>

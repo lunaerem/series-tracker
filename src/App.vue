@@ -37,7 +37,7 @@ provide('toggle', toggleModal);
 	</div>
     </header>
     <main>
-	<RouterView  />
+	<RouterView />
     </main>
     <footer>
 	<div id="main-footer" class="set-ratio">	
