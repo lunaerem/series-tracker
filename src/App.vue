@@ -24,13 +24,19 @@ provide('toggle', toggleModal);
 	    <nav>
 		<ul>
 		    <li>
-			<RouterLink to="/">Home</RouterLink>
+			<RouterLink to="/home">Home</RouterLink>
 		    </li>
 		    <li>
 			<RouterLink to="/about">About</RouterLink>
 		    </li>
-		    <li>
-			<RouterLink to="/games">Games</RouterLink>
+		    <li id="dropdown-li">
+			<div id="dropdown-wrapper">
+			  <RouterLink to="/games">Games</RouterLink>
+			  <div id="dropdown-content">
+			    <RouterLink to="/games/game1">Test Game 1</RouterLink>
+			    <RouterLink to="/games/game2">Test Game 2</RouterLink>
+			  </div>
+			</div>
 		    </li>
 		</ul>
 	    </nav>
@@ -67,11 +73,46 @@ provide('toggle', toggleModal);
 
 nav {
 
-
     ul {
 	list-style: none;
 	display: flex;
-	gap: 0.5em;
+	gap: 1rem;
+	min-height: 2lh;
+
+	li {
+	    position: relative;
+	    transition: color 0.5s ease;
+	    display: flex;
+	    align-items: center;
+
+	    a {
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		color: white;
+		height: 100%;
+	    }
+
+	    a:hover {
+		color: blue;
+	    }
+	}
+
+	li::after {
+	    content: '';
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    height: 2px;
+	    width: 100%;
+	    transform: scaleX(0);
+	    background-color: blue;
+	    transition: transform 0.5s ease;
+	}
+
+	li:hover::after {
+	    transform: scaleX(1);
+	}
     }
 }
 
@@ -87,4 +128,32 @@ nav {
     margin-bottom: 1em;
 }
 
+#dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+
+#dropdown-li:hover #dropdown-content {
+    display: block;
+}
+
+#dropdown-content {
+    background-color: white;
+    display: none;
+    position: absolute;
+    min-width: 10rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.9);
+    z-index: 1;
+
+    a {
+	color: black;
+	padding: 1rem 1rem;
+	display: block;
+    }
+
+    a:hover {
+	background-color: #ddd;
+    }
+}
 </style>
