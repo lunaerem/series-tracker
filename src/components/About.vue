@@ -2,23 +2,31 @@
 </script>
 
 <template>
-    <div>
-	<h1>About - Splash Header</h1>
+    <div id="about-splash" class="splash-img">
+	<h1>About</h1>
     </div>
     <section>
-	<h2>Description about the website</h2>
-	<p>Placeholder</p>
+	<div class="set-ratio">
+	    <h2>Description about the website</h2>
+	    <p>Placeholder</p>
+	</div>
     </section>
     <section>
-	<h2>Disclaimers</h2>
-	<p>Placeholder</p>
+	<div class="set-ratio">
+	    <h2>Disclaimers</h2>
+	    <p>Placeholder</p>
+	</div>
     </section>
     <section>
-	<h2>Attributions</h2>
-	<p>Placeholder</p>
+	<div class="set-ratio">
+	    <h2>Attributions</h2>
+	    <p>Placeholder</p>
+	</div>
     </section>
 </template>
 
 <style scoped>
-
+#about-splash {
+    background-image: url("../assets/vue.svg");
+}
 </style>

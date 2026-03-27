@@ -2,8 +2,8 @@
 </script>
 
 <template>
-    <div>
-	<h1>Home - Splash Stuff</h1>
+    <div id="home-splash" class="splash-img">
+	<h1>Series Tracker</h1>
     </div>
     <section style="background: purple">
 	<div class="set-ratio">
@@ -26,5 +26,7 @@
 </template>
 
 <style scoped>
-
+#home-splash {
+    background-image: url("../assets/vue.svg");
+}
 </style>

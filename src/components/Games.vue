@@ -5,21 +5,26 @@ const toggleModal = inject('toggle');
 </script>
 
 <template>
-    <div>
-	<h1>Games - Splash Header</h1>
-	<p>Placeholder</p>
+    <div id="games-splash" class="splash-img">
+	<h1>Games List</h1>
     </div>
     <section>
-	<h2>Brief description</h2>
-	<p>Placeholder</p>
+	<div class="set-ratio">
+	    <h2>Brief description</h2>
+	    <p>Placeholder</p>
+	</div>
     </section>
     <section>
-	<h2>Completion Guides/Documents</h2>
-	<p>Placeholder</p>
+	<div class="set-ratio">
+	    <h2>Completion Guides/Documents</h2>
+	    <p>Placeholder</p>
+	</div>
     </section>
     <section>
-	<h2>Game Series Timelines</h2>
-	<p>Placeholder</p>
+	<div class="set-ratio">
+	    <h2>Game Series Timelines</h2>
+	    <p>Placeholder</p>
+	</div>
     </section>
     <div>
 	This is just testing stuff, delete later
@@ -36,5 +41,7 @@ const toggleModal = inject('toggle');
 </template>
 
 <style scoped>
-
+#games-splash {
+    background-image: url("../assets/vue.svg");
+}
 </style>

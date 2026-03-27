@@ -33,8 +33,8 @@ provide('toggle', toggleModal);
 			<div id="dropdown-wrapper">
 			  <RouterLink to="/games">Games</RouterLink>
 			  <div id="dropdown-content">
-			    <RouterLink to="/games/game1">Test Game 1</RouterLink>
-			    <RouterLink to="/games/game2">Test Game 2</RouterLink>
+			    <RouterLink to="/games/game1">Completion Template</RouterLink>
+			    <RouterLink to="/games/game2">Timeline Template</RouterLink>
 			  </div>
 			</div>
 		    </li>
