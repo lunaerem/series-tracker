@@ -3,16 +3,25 @@
 
 <template>
     <div>
-	Home - Splash Stuff
+	<h1>Home - Splash Stuff</h1>
     </div>
-    <section>
-	Quick About
+    <section style="background: purple">
+	<div class="set-ratio">
+	    <h2>Quick About</h2>
+	    <p>Placeholder</p>
+	</div>
     </section>
     <section>
-	Section about reaching out for errors, etc.
+	<div class="set-ratio">
+	    <h2>Section about reaching out for errors, etc.</h2>
+	    <p>Placeholder</p>
+	</div>
     </section>
     <section>
-	Disclaimers
+	<div class="set-ratio">	
+	    <h2>Disclaimers</h2>
+	    <p>Placeholder</p>
+	</div>
     </section>
 </template>
 

@@ -47,8 +47,8 @@ provide('toggle', toggleModal);
     </main>
     <footer>
 	<div id="main-footer" class="set-ratio">	
-	    <p>© lunaerem</p>
-	    <button id="src-btn" onclick="window.open('https://github.com/lunaerem/series-tracker', '_blank')">Website Source</button>
+	    <a target="_blank" href="https://lunaerem.github.io/personal-website/">© lunaerem</a>
+	    <a id="src-btn" href="https://github.com/lunaerem/series-tracker" target="_blank">Website Source</a>
 	</div>
     </footer> 
     <dialog id="modal" closedby="any">
@@ -60,8 +60,9 @@ provide('toggle', toggleModal);
 <style scoped>
 #nav-header {
     position: fixed;
+    top: 0;
     width: 100%;
-    background-color: green;
+    background-color: rgba(0, 255, 0, 0.5);
 }
 
 #nav-inner {
@@ -121,6 +122,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 #src-btn {

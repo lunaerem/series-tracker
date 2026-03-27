@@ -6,13 +6,20 @@ const toggleModal = inject('toggle');
 
 <template>
     <div>
-	Games - Splash Header
+	<h1>Games - Splash Header</h1>
+	<p>Placeholder</p>
     </div>
     <section>
-	Brief description
+	<h2>Brief description</h2>
+	<p>Placeholder</p>
     </section>
     <section>
-	Game listing
+	<h2>Completion Guides/Documents</h2>
+	<p>Placeholder</p>
+    </section>
+    <section>
+	<h2>Game Series Timelines</h2>
+	<p>Placeholder</p>
     </section>
     <div>
 	This is just testing stuff, delete later
