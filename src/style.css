@@ -64,12 +64,86 @@ footer {
 }
 
 #modal {
-    /*color: blue;*/
+    transition: all 0.5s ease-out;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0;
+    width: 40vw;
+    height: 50vh;
+}
+
+#modal[open] {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@starting-style {
+    #modal[open] {
+	opacity: 0;
+	transform: translateY(-50px);
+    }
 }
 
 #modal::backdrop {
-    background: rgb(0 0 0 / 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-out;
     backdrop-filter: blur(4px);
+}
+
+@starting-style {
+    #modal[open]::backdrop {
+	background-color: rgba(0, 0, 0, 0);
+	backdrop-filter: blur(0px);
+    }
+}
+
+#close-btn {
+    color: green;
+    background: none;
+    border: none;
+    padding: 0;
+    border-radius: 9999px;
+    height: 24px;
+    width: 24px;
+    position: fixed;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+#dialog-splash {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* This is temp */
+    background-image: url("./assets/vue.svg");
+}
+
+#dialog-content {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#chip-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.chip {
+    background-color: #4a5568;
+    border-radius: 20px;
+    border: 0.15rem solid rgba(255, 255, 255, 1);
+    padding: 0.5rem 1rem;
+    color: white;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.5);
 }
 
 /*

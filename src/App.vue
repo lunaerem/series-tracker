@@ -52,8 +52,30 @@ provide('toggle', toggleModal);
 	</div>
     </footer> 
     <dialog id="modal" closedby="any">
-	<h2>{{ dialogTitle }}</h2>
-	<button @click="toggleModal()">Close</button>
+	<div style="display: flex; flex-direction: column; height: 100%">	
+	    <button @click="toggleModal()" id="close-btn">
+		<svg width="24" height="24" viewBox="0 0 24 24" focusable="true" stroke="white" stroke-width="2px">
+		    <path d="M 4 4 L 20 20 M 20 4 L 4 20" stroke-linecap="round" />
+		</svg>
+	    </button>
+	    <div id="dialog-splash">
+		<h2>{{ dialogTitle }}</h2>
+	    </div>
+	    <div id="dialog-content">
+		<p style="margin: 0;">Here's some text about the game</p>
+		<div style="margin-top: auto">
+		    <h3 style="border-bottom: 1px solid white;">Platforms</h3>
+		    <div id="chip-container">
+			<div class="chip">
+			    Test
+			</div>
+			<div class="chip">
+			    Test2
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
     </dialog>
 </template>
 
