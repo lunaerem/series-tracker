@@ -21,7 +21,9 @@ onMounted(() => {
     <section>
 	<div class="set-ratio">
 	    <h2>Disclaimers</h2>
-	    <p>Placeholder</p>
+	    <p>As stated previously, this unofficial website is exclusively for hosting and 
+		providing information that I have compiled or created for the 
+		video games that I enjoy. <b>This website does not and will never host game data, ROMs, cracks, etc.</b></p>
 	</div>
     </section>
     <section>

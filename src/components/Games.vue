@@ -14,12 +14,6 @@ onMounted(() => {
     </div>
     <section>
 	<div class="set-ratio">
-	    <h2>Brief description</h2>
-	    <p>Placeholder</p>
-	</div>
-    </section>
-    <section>
-	<div class="set-ratio">
 	    <h2>Completion Guides/Documents</h2>
 	    <p>I am a bit of a completionist when it comes to playing video games (Ok, a
 	     bit <i>might</i> be an understatement...), so over the years, I have created
@@ -28,37 +22,12 @@ onMounted(() => {
 	     in a game or get all of its achievements.</p>
 	    <div class="game-grid">
 		<RouterLink class="game active-live" to="/games/game1">
-		    NieR Replicant ver.1.22474487139... <br />
 		    Coming Soon...
 		</RouterLink>
 		<div class="game">
-		    NieR Automata <br />
 		    Coming Soon...
 		</div>
-		<div class="game">
-		    Blossom Tales: The Sleeping King <br />
-		    Coming Soon...
-		</div>
-		<div class="game">
-		    Fire Emblem: Three Houses <br />
-		    Coming Soon...
-		</div>
-		<div class="game">
-		    Xenoblade: Definitive Edition <br />
-		    Coming Soon...
-		</div>
-		<div class="game">
-		    Xenoblade 2 <br />
-		    Coming Soon...
-		</div>
-		<div class="game">
-		    The Last Story <br />
-		    Coming Soon...
-		</div>
-		<div class="game">
-		    The Elder Scrolls V: Skyrim <br />
-		    Coming Soon...
-		</div>
+    	
 	    </div>
 	</div>
     </section>
@@ -73,21 +42,8 @@ onMounted(() => {
 	     and what platforms provide the best experience.</p>
 	    <div class="game-grid">
 		<div class="game">
-		    Kingdom Hearts <br />
 		    Coming Soon...
-		</div>
-		<div class="game">
-		    Xenoblade  <br />
-		    Coming Soon...
-		</div>
-		<div class="game">
-		    Like a Dragon/Yakuza <br />
-		    Coming Soon...
-		</div>
-		<div class="game">
-		    Valve Universe <br />
-		    Coming Soon...
-		</div>
+		</div>	
 	    </div>
 	</div>
     </section>
