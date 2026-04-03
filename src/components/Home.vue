@@ -1,9 +1,16 @@
 <script setup lang="ts">
+import { inject, onMounted } from 'vue';
+
+const splash = inject('splash');
+
+onMounted(() => {
+    splash.value = document.querySelector('.splash-img');
+})
 </script>
 
 <template>
     <div id="home-splash" class="splash-img">
-	<h1>Series Tracker</h1>
+	<h1>Series Tracker (Name Pending)</h1>
     </div>
     <section style="background: purple">
 	<div class="set-ratio">

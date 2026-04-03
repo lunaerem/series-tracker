@@ -1,7 +1,12 @@
 <script setup lang="ts">
-import { inject } from 'vue';
+import { inject, onMounted } from 'vue';
 
 const toggleModal = inject('toggle');
+const splash = inject('splash');
+
+onMounted(() => {
+    splash.value = document.querySelector('.splash-img');
+})
 </script>
 
 <template>

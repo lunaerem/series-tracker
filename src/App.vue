@@ -1,7 +1,13 @@
 <script setup lang="ts">
-import { ref, provide } from 'vue';
+import { ref, provide, onMounted } from 'vue';
 
 const dialogTitle = ref(null);
+let header = null;
+const splash = ref(null);
+
+onMounted(() => {
+    header = document.getElementById('nav-header');
+})
 
 function toggleModal(title?) {
     const modal = document.getElementById("modal");
@@ -15,12 +21,24 @@ function toggleModal(title?) {
 }
 
 provide('toggle', toggleModal);
+provide('splash', splash);
+
+const handleWindowScroll = () => {
+    if(window.scrollY > (splash.value.offsetTop + splash.value.offsetHeight)) {
+	header.classList.add('transparent');
+    } else {
+	header.classList.remove('transparent');
+    }
+    
+};
+
+window.addEventListener('scroll', handleWindowScroll);
 </script>
 
 <template>
     <header id="nav-header"> 
 	<div id="nav-inner" class="set-ratio">
-	    <img alt="Logo" />
+	    <RouterLink to="/home/" id="logo">Logo</RouterLink>
 	    <nav>
 		<ul>
 		    <li>
@@ -84,7 +102,9 @@ provide('toggle', toggleModal);
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 255, 0, 0.5);
+    background-color: rgba(0, 255, 0, 0);
+    z-index: 1;
+    transition: all 0.5s
 }
 
 #nav-inner {
@@ -92,6 +112,11 @@ provide('toggle', toggleModal);
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    align-items: stretch;
+}
+
+.transparent {
+    background-color: rgba(0, 255, 0, 0.75) !important; 
 }
 
 nav {
@@ -137,6 +162,10 @@ nav {
 	    transform: scaleX(1);
 	}
     }
+}
+
+#logo {
+    
 }
 
 #main-footer {

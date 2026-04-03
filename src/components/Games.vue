@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import { inject } from 'vue';
+import { inject, onMounted } from 'vue';
 
-const toggleModal = inject('toggle');
+const splash = inject('splash');
+
+onMounted(() => {
+    splash.value = document.querySelector('.splash-img');
+})
 </script>
 
 <template>
@@ -17,31 +21,117 @@ const toggleModal = inject('toggle');
     <section>
 	<div class="set-ratio">
 	    <h2>Completion Guides/Documents</h2>
-	    <p>Placeholder</p>
+	    <p>I am a bit of a completionist when it comes to playing video games (Ok, a
+	     bit <i>might</i> be an understatement...), so over the years, I have created
+	     quite a few documents and compiled a lot of information about certain games,
+	     which I have decided to share below for anyone else looking to finish everything
+	     in a game or get all of its achievements.</p>
+	    <div class="game-grid">
+		<RouterLink class="game active-live" to="/games/game1">
+		    NieR Replicant ver.1.22474487139... <br />
+		    Coming Soon...
+		</RouterLink>
+		<div class="game">
+		    NieR Automata <br />
+		    Coming Soon...
+		</div>
+		<div class="game">
+		    Blossom Tales: The Sleeping King <br />
+		    Coming Soon...
+		</div>
+		<div class="game">
+		    Fire Emblem: Three Houses <br />
+		    Coming Soon...
+		</div>
+		<div class="game">
+		    Xenoblade: Definitive Edition <br />
+		    Coming Soon...
+		</div>
+		<div class="game">
+		    Xenoblade 2 <br />
+		    Coming Soon...
+		</div>
+		<div class="game">
+		    The Last Story <br />
+		    Coming Soon...
+		</div>
+		<div class="game">
+		    The Elder Scrolls V: Skyrim <br />
+		    Coming Soon...
+		</div>
+	    </div>
 	</div>
     </section>
-    <section>
+    <section style="margin-bottom: 1rem;">
 	<div class="set-ratio">
-	    <h2>Game Series Timelines</h2>
-	    <p>Placeholder</p>
+	    <h2> Full Game Series Timelines</h2>
+	    <p>Ever wanted to play a game series from start to end, but
+	     are not quite sure what order to go through them in? Then this
+	     is the section you are looking for! Below are full timeline
+	     breakdowns of some of my favourite series including what order to
+	     play through them, what the preferred editions of each game are,
+	     and what platforms provide the best experience.</p>
+	    <div class="game-grid">
+		<div class="game">
+		    Kingdom Hearts <br />
+		    Coming Soon...
+		</div>
+		<div class="game">
+		    Xenoblade  <br />
+		    Coming Soon...
+		</div>
+		<div class="game">
+		    Like a Dragon/Yakuza <br />
+		    Coming Soon...
+		</div>
+		<div class="game">
+		    Valve Universe <br />
+		    Coming Soon...
+		</div>
+	    </div>
 	</div>
     </section>
-    <div>
-	This is just testing stuff, delete later
-	<ul>
-	    <li>
-		<RouterLink to="/games/game1">Game 1</RouterLink>
-	    </li>
-	    <li>
-		<RouterLink to="/games/game2">Game 2</RouterLink>
-	    </li>
-	</ul>
-	<button @click="toggleModal('Games')">Popup Test</button>
-    </div>	
 </template>
 
 <style scoped>
 #games-splash {
     background-image: url("../assets/vue.svg");
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.game {
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: grey;
+    background-image: url("../assets/vue.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: 1000;
+    word-break: break-all;
+    filter: grayscale(80%);
+    transition: all 0.5s;
+
+    &.active-live {
+	filter: grayscale(20%);
+    }
+
+    &.active-live:hover {
+	color: blue;
+	filter: grayscale(0%);
+    }
 }
 </style>
