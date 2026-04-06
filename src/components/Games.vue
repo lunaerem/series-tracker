@@ -39,7 +39,9 @@ onMounted(() => {
 	     is the section you are looking for! Below are full timeline
 	     breakdowns of some of my favourite series including what order to
 	     play through them, what the preferred editions of each game are,
-	     and what platforms provide the best experience.</p>
+	     and what platforms provide the best experience. Some series can be
+	    quite confusing to find a good order to play through, so this is here
+	    for anyone looking to skip the hassle.</p>
 	    <div class="game-grid">
 		<div class="game">
 		    Coming Soon...

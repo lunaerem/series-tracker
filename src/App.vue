@@ -65,7 +65,7 @@ window.addEventListener('scroll', handleWindowScroll);
     </main>
     <footer>
 	<div id="main-footer" class="set-ratio">	
-	    <a target="_blank" href="https://lunaerem.github.io/personal-website/">lunaerem</a>
+	    <a target="_blank" href="https://lunaerem.github.io/personal-website/">© Lunaerem</a>
 	    <a id="src-btn" href="https://github.com/lunaerem/series-tracker" target="_blank">Website Source</a>
 	</div>
     </footer> 
