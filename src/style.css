@@ -54,6 +54,7 @@ section {
     border-radius: 10px;
     transition: all 0.5s ease;
     text-decoration: none;
+    color: #fff0ff;
 
     &:hover {
 	background: #b57edc;
@@ -135,9 +136,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    /* This is temp */
-    background-image: url("./assets/vue.svg");
+    background-image: url("./assets/Background.svg");
 }
 
 #dialog-content {

@@ -66,7 +66,7 @@ onMounted(() => {
 
 <style scoped>
 #home-splash {
-    background-image: url("../assets/vue.svg");
+    background-image: url("../assets/Background.svg");
 }
 
 #about-wrapper {

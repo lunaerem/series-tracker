@@ -33,6 +33,6 @@ onMounted(() => {
 
 <style scoped>
 #completion-splash {
-    background-image: url("../../assets/vue.svg");
+    background-image: url("../../assets/Background.svg");
 }
 </style>

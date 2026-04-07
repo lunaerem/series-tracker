@@ -117,14 +117,6 @@ window.addEventListener('scroll', handleWindowScroll);
 
 .transparent {
     background-color: rgba(75, 28, 113, 0.75) !important; 
-
-    a {
-	color: #dbb6ee !important;
-
-	&:hover {
-	    color: #ffffff !important;
-	}
-    }
 }
 
 nav {
@@ -150,7 +142,7 @@ nav {
 	    }
 
 	    a:hover {
-		color: #4b1c71;
+		color: #dbb6ee;
 	    }
 	}
 

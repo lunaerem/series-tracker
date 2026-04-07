@@ -21,9 +21,9 @@ onMounted(() => {
 	     which I have decided to share below for anyone else looking to finish everything
 	     in a game or get all of its achievements.</p>
 	    <div class="game-grid">
-		<RouterLink class="game active-live" to="/games/game1">
+		<!--<RouterLink class="game active-live" to="/games/game1">
 		    Coming Soon...
-		</RouterLink>
+</RouterLink>-->
 		<div class="game">
 		    Coming Soon...
 		</div>
@@ -53,7 +53,7 @@ onMounted(() => {
 
 <style scoped>
 #games-splash {
-    background-image: url("../assets/vue.svg");
+    background-image: url("../assets/Background.svg");
 }
 
 .game-grid {
@@ -73,7 +73,7 @@ onMounted(() => {
     align-items: center;
     text-align: center;
     background: grey;
-    background-image: url("../assets/vue.svg");
+    background-image: url("../assets/Background.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -88,7 +88,7 @@ onMounted(() => {
     }
 
     &.active-live:hover {
-	color: blue;
+	color: #dbb6ee;
 	filter: grayscale(0%);
     }
 }

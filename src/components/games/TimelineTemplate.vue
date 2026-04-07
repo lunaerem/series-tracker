@@ -32,6 +32,6 @@ onMounted(() => {
 
 <style scoped>
 #timeline-splash {
-    background-image: url("../../assets/vue.svg");
+    background-image: url("../../assets/Background.svg");
 }
 </style>
