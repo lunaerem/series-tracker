@@ -37,8 +37,10 @@ window.addEventListener('scroll', handleWindowScroll);
 
 <template>
     <header id="nav-header"> 
-	<div id="nav-inner" class="set-ratio">
-	    <RouterLink to="/home/" id="logo">Logo</RouterLink>
+	<div id="nav-inner" class="set-ratio"> 
+	    <div id="logo-wrapper">
+		<RouterLink to="/home/" id="logo-btn" />
+	    </div>
 	    <nav>
 		<ul>
 		    <li>
@@ -50,10 +52,10 @@ window.addEventListener('scroll', handleWindowScroll);
 		    <li id="dropdown-li">
 			<div id="dropdown-wrapper">
 			  <RouterLink to="/games">Games</RouterLink>
-			  <div id="dropdown-content">
+			  <!--<div id="dropdown-content">
 			    <RouterLink to="/games/game1">Completion Template</RouterLink>
 			    <RouterLink to="/games/game2">Timeline Template</RouterLink>
-			  </div>
+</div>-->
 			</div>
 		    </li>
 		</ul>
@@ -113,6 +115,8 @@ window.addEventListener('scroll', handleWindowScroll);
     justify-content: space-between;
     align-content: center;
     align-items: stretch;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .transparent {
@@ -164,8 +168,19 @@ nav {
     }
 }
 
-#logo {
-    
+#logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./assets/Logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 120px;
+}
+
+#logo-btn {
+    width: 100%;
+    height: 100%;
 }
 
 #main-footer {
@@ -174,6 +189,8 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #src-btn {
