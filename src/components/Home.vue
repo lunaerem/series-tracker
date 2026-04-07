@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { inject, onMounted } from 'vue';
 
-const splash = inject('splash');
+const splash = inject('splash') as any;
 
 onMounted(() => {
     splash.value = document.querySelector('.splash-img');

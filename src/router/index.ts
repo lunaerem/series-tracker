@@ -19,6 +19,16 @@ const router = createRouter({
 	{ path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound }
     ],
     scrollBehavior(to, from, savedPosition) {
+	if (to.hash) {
+	    return {
+		el: to.hash,
+		top: 10,
+		behavior: 'smooth',
+	    }
+	} else if (savedPosition) {
+	    return savedPosition;
+	} else if (from) {}
+
 	return { top: 0 }
     },
 })

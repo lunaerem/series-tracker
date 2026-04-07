@@ -2,21 +2,23 @@
 import { ref, provide, onMounted } from 'vue';
 
 const dialogTitle = ref(null);
-let header = null;
-const splash = ref(null);
+let header: HTMLElement | null = null;
+const splash: any = ref(null);
 
 onMounted(() => {
     header = document.getElementById('nav-header');
 })
 
-function toggleModal(title?) {
-    const modal = document.getElementById("modal");
+function toggleModal(title?: any) {
+    const modal = document.getElementById("modal") as HTMLDialogElement;
 
-    if(modal.open) {
-	modal.close();
-    } else {
-	dialogTitle.value = title;
-	modal.showModal();
+    if(modal != null) {
+	if(modal.open) {
+	    modal.close();
+	} else {
+	    dialogTitle.value = title;
+	    modal.showModal();
+	}
     }
 }
 
@@ -24,12 +26,13 @@ provide('toggle', toggleModal);
 provide('splash', splash);
 
 const handleWindowScroll = () => {
-    if(window.scrollY > (splash.value.offsetTop + splash.value.offsetHeight)) {
-	header.classList.add('transparent');
-    } else {
-	header.classList.remove('transparent');
+    if(header != null && splash.value != null) {
+	if(window.scrollY > (splash.value.offsetTop + splash.value.offsetHeight)) {
+	    header.classList.add('transparent');
+	} else {
+	    header.classList.remove('transparent');
+	}
     }
-    
 };
 
 window.addEventListener('scroll', handleWindowScroll);
