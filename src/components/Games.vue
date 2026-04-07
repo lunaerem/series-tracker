@@ -21,13 +21,33 @@ onMounted(() => {
 	     which I have decided to share below for anyone else looking to finish everything
 	     in a game or get all of its achievements.</p>
 	    <div class="game-grid">
-		<!--<RouterLink class="game active-live" to="/games/game1">
-		    Coming Soon...
-</RouterLink>-->
+		<RouterLink class="game active-live" to="/games/game1">
+		    NieR Replicant ver.1.22474487139...
+		</RouterLink>
 		<div class="game">
+		    NieR: Automata <br /> 
 		    Coming Soon...
 		</div>
-    	
+		<div class="game">
+		    Blossom Tales: The Sleeping King <br /> 
+		    Coming Soon...
+		</div>
+		<div class="game">
+		    Xenoblade: Definitive Edition <br />
+		    Coming Soon...
+		</div>   	
+		<div class="game">
+		    Xenoblade 2 <br />
+		    Coming Soon...
+		</div>
+		<div class="game">
+		    The Last Story <br />
+		    Coming Soon...
+		</div>
+		<div class="game">
+		    The Elder Scrolls V: Skyrim <br />
+		    Coming Soon...
+		</div>
 	    </div>
 	</div>
     </section>
@@ -44,8 +64,17 @@ onMounted(() => {
 	    skip the hassle.</p>
 	    <div class="game-grid">
 		<div class="game">
+		    Kingdom Hearts <br />
 		    Coming Soon...
 		</div>	
+		<div class="game">
+		    Like a Dragon/Yakuza <br />
+		    Coming Soon...
+		</div>
+		<div class="game">
+		    Valve Universe <br />
+		    Coming Soon...
+		</div>
 	    </div>
 	</div>
     </section>
@@ -84,7 +113,7 @@ onMounted(() => {
     transition: all 0.5s;
 
     &.active-live {
-	filter: grayscale(20%);
+	filter: grayscale(25%);
     }
 
     &.active-live:hover {

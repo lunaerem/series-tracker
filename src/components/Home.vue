@@ -56,7 +56,7 @@ onMounted(() => {
 		games I enjoy, which hosts documents created by me to aid others 
 		attempting to 100% complete a game or describe the 
 		best play order for a series. <b>This website does not and will 
-		never host game data, ROMs, cracks, etc.</b> For more information,
+		never host game source files, ROMs, cracks, etc.</b> For more information,
 		see the dedicated "Disclaimers" section of the <RouterLink to="/About">
 		About Page.</RouterLink></p>
 	</div>
