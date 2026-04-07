@@ -66,7 +66,7 @@ window.addEventListener('scroll', handleWindowScroll);
     <footer>
 	<div id="main-footer" class="set-ratio">	
 	    <a target="_blank" href="https://lunaerem.github.io/personal-website/">© Lunaerem</a>
-	    <a id="src-btn" href="https://github.com/lunaerem/series-tracker" target="_blank">Website Source</a>
+	    <a id="src-btn" class="button" href="https://github.com/lunaerem/series-tracker" target="_blank">Website Source</a>
 	</div>
     </footer> 
     <dialog id="modal" closedby="any">
@@ -102,7 +102,7 @@ window.addEventListener('scroll', handleWindowScroll);
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 255, 0, 0);
+    background-color: rgba(75, 28, 113, 0);
     z-index: 1;
     transition: all 0.5s
 }
@@ -116,7 +116,15 @@ window.addEventListener('scroll', handleWindowScroll);
 }
 
 .transparent {
-    background-color: rgba(0, 255, 0, 0.75) !important; 
+    background-color: rgba(75, 28, 113, 0.75) !important; 
+
+    a {
+	color: #dbb6ee !important;
+
+	&:hover {
+	    color: #ffffff !important;
+	}
+    }
 }
 
 nav {
@@ -128,8 +136,7 @@ nav {
 	min-height: 2lh;
 
 	li {
-	    position: relative;
-	    transition: color 0.5s ease;
+	    position: relative;  
 	    display: flex;
 	    align-items: center;
 
@@ -137,12 +144,13 @@ nav {
 		text-decoration: none;
 		display: flex;
 		align-items: center;
-		color: white;
+		color: #fff0ff;
 		height: 100%;
+		transition: color 0.25s ease;
 	    }
 
 	    a:hover {
-		color: blue;
+		color: #4b1c71;
 	    }
 	}
 
@@ -154,7 +162,7 @@ nav {
 	    height: 2px;
 	    width: 100%;
 	    transform: scaleX(0);
-	    background-color: blue;
+	    background-color: #fff0ff;
 	    transition: transform 0.5s ease;
 	}
 

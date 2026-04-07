@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #dadada;
+  background-color: #0F0529;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -39,8 +39,30 @@ main {
     flex-direction: column;
 }
 
+h2 {
+    border-bottom: 1px solid white;
+}
+
+section {
+    padding: 1rem;
+}
+
+.button {
+    background: #7338A0;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+
+    &:hover {
+	background: #b57edc;
+	box-shadow: 0px 0px 25px -8px #CF96FF;
+    }
+}
+
 footer {
-    background-color: blue;
+    background: linear-gradient(to right, #4b1c71, #0F0529);
     overflow: auto;
     padding-top: 1em;
 }
@@ -139,17 +161,3 @@ footer {
     color: white;
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.5);
 }
-
-/*
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}*/
