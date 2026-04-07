@@ -34,14 +34,14 @@ onMounted(() => {
     <section style="margin-bottom: 1rem;">
 	<div class="set-ratio">
 	    <h2> Full Game Series Timelines</h2>
-	    <p>Ever wanted to play a game series from start to end, but
-	     are not quite sure what order to go through them in? Then this
-	     is the section you are looking for! Below are full timeline
-	     breakdowns of some of my favourite series including what order to
-	     play through them, what the preferred editions of each game are,
-	     and what platforms provide the best experience. Some series can be
-	    quite confusing to find a good order to play through, so this is here
-	    for anyone looking to skip the hassle.</p>
+	    <p>Have you ever wanted to play a game series from start to finish,
+	    but are not quite sure what order to play them in? Then this is the
+	    section you are looking for! Below are full timeline breakdowns of
+	    some of my favourite series, including the recommended order to play
+	    them, the preferred editions for each game, and the platforms that
+	    offer the best experience. Some series can be quite confusing to find
+	    a good order to play through, so this is here for anyone looking to
+	    skip the hassle.</p>
 	    <div class="game-grid">
 		<div class="game">
 		    Coming Soon...
