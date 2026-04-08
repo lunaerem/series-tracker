@@ -21,7 +21,7 @@ onMounted(() => {
 	     which I have decided to share below for anyone else looking to finish everything
 	     in a game or get all of its achievements.</p>
 	    <div class="game-grid">
-		<RouterLink class="game active-live" to="/games/game1">
+		<RouterLink class="game active-live" to="/games/NieR-Replicant">
 		    NieR Replicant ver.1.22474487139...
 		</RouterLink>
 		<div class="game">

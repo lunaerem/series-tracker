@@ -161,3 +161,47 @@ footer {
     color: white;
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.5);
 }
+
+.important-txt {
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border: 1px solid #fff0ff;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #fff0ff;
+    padding: 0.25rem;
+}
+
+th {
+    background: linear-gradient(to right, #4b1c71, #431569);
+}
+
+td {
+    background: #0F0529;
+}
+
+summary {
+    background: linear-gradient(to right, #4b1c71, #0F0529);
+    padding: 0.5rem;
+}
+
+details {
+    margin-bottom: 1rem;
+
+    &:open {
+	border: 1px dashed #fff0ff;
+    }
+}

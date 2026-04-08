@@ -48,7 +48,7 @@ onMounted(() => {
 	<div class="set-ratio">
 	    <h2>Attributions/Licensing</h2>
 	    <ul>
-		<li>Website created by Andrew (<a target="_blank" class="hyperlink" href="https://github.com/lunaerem">lunaerem</a>), source code available 
+		<li>Website created by Andrew (<a target="_blank" class="hyperlink" href="https://github.com/lunaerem">Lunaerem</a>), source code available 
 		<a target="_blank" class="hyperlink" href="https://github.com/lunaerem/series-tracker">here</a></li>
 		<li>As this is a fan-made website, all trademarks and copyrights of games belong to their respecitve owners
 		    and is not affiliated with the games' developers or publishers.</li>

@@ -3,8 +3,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../components/Home.vue'
 import About from '../components/About.vue'
 import Games from '../components/Games.vue'
-import CompletionTemplate from '../components/games/CompletionTemplate.vue'
-import TimelineTemplate from '../components/games/TimelineTemplate.vue'
+import NR from '../components/games/NR.vue'
+import KH from '../components/games/KH.vue'
 
 import NotFound from '../error/NotFound.vue'
 
@@ -14,8 +14,8 @@ const router = createRouter({
 	{ path: '/', alias: '/home', component: Home },
 	{ path: '/about', component: About },
 	{ path: '/games', component: Games },
-	{ path: '/games/game1', component: CompletionTemplate },
-	{ path: '/games/game2', component: TimelineTemplate },
+	{ path: '/games/NieR-Replicant', component: NR },
+	{ path: '/games/Kingdom-Hearts', component: KH },
 	{ path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound }
     ],
     scrollBehavior(to, from, savedPosition) {
