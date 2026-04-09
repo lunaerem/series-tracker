@@ -288,6 +288,6 @@ onMounted(() => {
 
 <style scoped>
 #repli-splash {
-    background-image: url("../../assets/Background.svg");
+    background-image: url("../../assets/splash/nr.svg");
 }
 </style>

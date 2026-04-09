@@ -178,7 +178,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./assets/Logo.svg");
+    background-image: url("./assets/logos/website.svg");
     background-repeat: no-repeat;
     background-position: center;
     min-width: 120px;

@@ -32,6 +32,6 @@ onMounted(() => {
 
 <style scoped>
 #timeline-splash {
-    background-image: url("../../assets/Background.svg");
+    background-image: url("../../assets/splash/kh.svg");
 }
 </style>

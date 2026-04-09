@@ -25,6 +25,6 @@ onMounted(() => {
 
 <style scoped>
 #auto-splash {
-    background-image: url("../../assets/Background.svg");
+    background-image: url("../../assets/splash/na.svg");
 }
 </style>

@@ -65,7 +65,7 @@ onMounted(() => {
 
 <style scoped>
 #home-splash {
-    background-image: url("../assets/Background.svg");
+    background-image: url("../assets/splash/main.svg");
 }
 
 #about-wrapper {
