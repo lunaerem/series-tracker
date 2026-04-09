@@ -4,6 +4,7 @@ import Home from '../components/Home.vue'
 import About from '../components/About.vue'
 import Games from '../components/Games.vue'
 import NR from '../components/games/NR.vue'
+import NA from '../components/games/NA.vue'
 import KH from '../components/games/KH.vue'
 
 import NotFound from '../error/NotFound.vue'
@@ -16,6 +17,7 @@ const router = createRouter({
 	{ path: '/games', component: Games },
 	{ path: '/games/NieR-Replicant', component: NR },
 	{ path: '/games/Kingdom-Hearts', component: KH },
+	{ path: '/games/NieR-Automata', component: NA },
 	{ path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound }
     ],
     scrollBehavior(to, from, savedPosition) {

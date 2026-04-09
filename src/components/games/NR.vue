@@ -9,7 +9,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div id="completion-splash" class="splash-img">
+    <div id="repli-splash" class="splash-img">
 	<h1>NieR Replicant ver.1.22474487139... <br />
 	Spoiler-Sensitive Guide for 100% Completion</h1>
     </div>
@@ -27,7 +27,7 @@ onMounted(() => {
 	    <p>This guide will allow you to 100% complete NieR Replicant ver.1.22474487139...
 	    (Unlocking most things, getting all achievements, etc.) on your first playthrough without
 	    being exposed to potential spoilers.</p>
-	    <p><b>Note:</b> This guide is intended for the remastered ver.1.22474487139 edition of the
+	    <p><u>Note:</u> This guide is intended for the remastered ver.1.22474487139 edition of the
 	    game, and not the PlayStation 3 or Xbox 360 versions! Some aspects of the guide might still
 	    be applicable, but several important things have been changed about the game in the remaster!</p>
 	    <p class="important-txt">DON'T LOOK UP ANYTHING ABOUT THE GAME OUTSIDE OF THIS LIST UNTIL YOU HAVE COMPLETED ENDING E!</p>
@@ -288,7 +288,7 @@ onMounted(() => {
 </template>
 
 <style scoped>
-#completion-splash {
+#repli-splash {
     background-image: url("../../assets/Background.svg");
 }
 </style>
