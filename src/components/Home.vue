@@ -33,7 +33,7 @@ onMounted(() => {
 		</div>
 	    </div>
 	    <div id="games-temp-link">
-		<RouterLink to="/Games/" class="button">Check them out</RouterLink>
+		<RouterLink to="/Games/" class="button" draggable="false">Check them out</RouterLink>
 	    </div>
 	</div>
     </section>

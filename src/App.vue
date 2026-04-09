@@ -42,19 +42,19 @@ window.addEventListener('scroll', handleWindowScroll);
     <header id="nav-header"> 
 	<div id="nav-inner" class="set-ratio"> 
 	    <div id="logo-wrapper">
-		<RouterLink to="/home/" id="logo-btn" />
+		<RouterLink to="/home/" id="logo-btn" draggable="false" />
 	    </div>
 	    <nav>
 		<ul>
 		    <li>
-			<RouterLink to="/home">Home</RouterLink>
+			<RouterLink to="/home" draggable="false">Home</RouterLink>
 		    </li>
 		    <li>
-			<RouterLink to="/about">About</RouterLink>
+			<RouterLink to="/about" draggable="false">About</RouterLink>
 		    </li>
 		    <li id="dropdown-li">
 			<div id="dropdown-wrapper">
-			  <RouterLink to="/games">Games</RouterLink>
+			  <RouterLink to="/games" draggable="false">Games</RouterLink>
 			  <!--<div id="dropdown-content">
 			    <RouterLink to="/games/game1">Completion Template</RouterLink>
 			    <RouterLink to="/games/game2">Timeline Template</RouterLink>
@@ -71,7 +71,8 @@ window.addEventListener('scroll', handleWindowScroll);
     <footer>
 	<div id="main-footer" class="set-ratio">	
 	    <a target="_blank" href="https://lunaerem.github.io/personal-website/">© Lunaerem</a>
-	    <a id="src-btn" class="button" href="https://github.com/lunaerem/series-tracker" target="_blank">Website Source</a>
+	    <a id="src-btn" class="button" href="https://github.com/lunaerem/series-tracker"
+		target="_blank" draggable="false">Website Source</a>
 	</div>
     </footer> 
     <dialog id="modal" closedby="any">
@@ -146,6 +147,8 @@ nav {
 		color: #fff0ff;
 		height: 100%;
 		transition: color 0.25s ease;
+		user-select: none;
+		-webkit-user-select: none;
 	    }
 
 	    a:hover {

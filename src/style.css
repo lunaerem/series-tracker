@@ -39,6 +39,10 @@ main {
     flex-direction: column;
 }
 
+a {
+    color: rgb(0, 202, 219);
+}
+
 h2 {
     border-bottom: 1px solid white;
 }
@@ -56,6 +60,8 @@ section {
     transition: all 0.5s ease;
     text-decoration: none;
     color: #fff0ff;
+    user-select: none;
+    -webkit-user-select: none;
 
     &:hover {
 	background: #b57edc;

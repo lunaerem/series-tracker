@@ -43,25 +43,24 @@ onMounted(() => {
 	    port, so it has a few technical problems, 
 	    specifically regarding the frame rate. It is supposed to be capped to 60fps, but it is 
 	    implemented poorly, resulting in a weird 57-58fps cap with horrible stuttering. 
-	    Thankfully, this can easily be resolved by doing the following:
-		<ol>
-		    <li>Boot the game to the main menu and save your game settings at least once
-		    (Go to settings and change something, there should be a saving icon that appears
-		    when you exit the menu).</li>
-		    <li>Close out of the game and go to the configuration files location listed
-		    below and open drawing_settings.ini
-			<ul>
-			    <li>Windows: <code>%USERPROFILE%\Documents\My Games\NieR Replicant
-			    ver.1.22474487139\Steam\&lt;user-id&gt;\</code></li>
-			    <li>Linux: <code>&lt;SteamLibrary-folder&gt;/steamapps/compatdata/1113560/pfx/</code></li>
-			</ul>
-		    </li>
-		    <li>Set <code>FpsControlDisable = 1</code> and save the file</li>
-		    <li>Use an external frame limiter (I.E. NVidia Control Panel) to
-		    cap the frame rate to 60fps (Going above or below 60fps impacts
-		    the game’s simulation speed, so don’t do that)</li>
-		</ol>
-	    </p>
+	    Thankfully, this can easily be resolved by doing the following:</p>
+	    <ol>
+		<li>Boot the game to the main menu and save your game settings at least once
+		(Go to settings and change something, there should be a saving icon that appears
+		when you exit the menu).</li>
+		<li>Close out of the game and go to the configuration files location listed
+		    below and open <code>drawing_settings.ini</code>
+		    <ul>
+			<li>Windows: <code>%USERPROFILE%\Documents\My Games\NieR Replicant
+			ver.1.22474487139\Steam\&lt;user-id&gt;\</code></li>
+			<li>Linux: <code>&lt;SteamLibrary-folder&gt;/steamapps/compatdata/1113560/pfx/</code></li>
+		    </ul>
+		</li>
+		<li>Set <code>FpsControlDisable = 1</code> and save the file</li>
+		<li>Use an external frame limiter (I.E. NVidia Control Panel) to
+		cap the frame rate to 60fps (Going above or below 60fps impacts
+		the game’s simulation speed, so don’t do that)</li>
+	    </ol>
 	    <p><u>Recommendation:</u> Play on Normal or hard difficulty. Normal will still be pretty easy, so try
 	    Hard if you are looking for a bit more of a challenge. The difficulty can be changed at any time from
 	    the main menu with no penalty, so feel free to experiment (Nothing is locked by difficulty, but Hard
