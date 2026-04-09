@@ -17,6 +17,8 @@ onMounted(() => {
 	<div class="set-ratio">
 	    <h2>Platforms</h2>
 	    <p>Chips (Probably change this from a full section to something more condensed)</p>
+	    <p>Developer: </p>
+	    <p>Publisher: </p>
 	</div>
     </section>
     <section>
