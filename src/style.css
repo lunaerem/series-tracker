@@ -253,6 +253,11 @@ td {
 summary {
     background: linear-gradient(to right, #4b1c71, #0F0529);
     padding: 0.5rem;
+    pointer: cursor;
+
+    &:hover {
+	background: linear-gradient(to right, #b57edc, #0f0529);
+    }
 }
 
 details {
