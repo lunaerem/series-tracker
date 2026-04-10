@@ -263,7 +263,7 @@ summary {
 details {
     margin-bottom: 1rem;
 
-    &:open {
+    &[open] {
 	border: 1px dashed #fff0ff;
     }
 }
