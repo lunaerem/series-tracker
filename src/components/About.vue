@@ -60,6 +60,7 @@ onMounted(() => {
 			    code of the license</a></li>
 		    </ul>
 		</li>
+		<li>The usage of this website or its contents for training AI is strictly prohibited.</li>
 		<li>Hosted using <a target="_blank" class="hyperlink" href="https://docs.github.com/en/pages">GitHub Pages</a></li>
 		<li><a target="_blank" class="hyperlink" href="https://vite.dev/">Vite</a>,
 		included under the <a target="_blank" class="hyperlink" href="https://opensource.org/license/MIT">MIT License</a></li>

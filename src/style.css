@@ -1,16 +1,16 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 
-  color-scheme: light dark;
-  color: #dadada;
-  background-color: #0F0529;
+    color-scheme: light dark;
+    color: #dadada;
+    background-color: #0F0529;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 html:has(dialog[open]) { 
@@ -214,6 +214,11 @@ footer {
     }
 }
 
+.inner-pad {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
 .important-txt {
     text-align: center;
     font-weight: bold;
@@ -255,5 +260,11 @@ details {
 
     &:open {
 	border: 1px dashed #fff0ff;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) and (orientation: landscape) {
+    .set-ratio {
+	max-width: 100dvw;
     }
 }

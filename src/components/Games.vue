@@ -107,7 +107,7 @@ onMounted(() => {
     font-weight: 900;
     color: #fff0ff;
     word-break: break-all;
-    filter: grayscale(90%);
+    filter: grayscale(100%);
     transition: all 0.5s;
     user-select: none;
     -webkit-user-select: none;
@@ -115,7 +115,7 @@ onMounted(() => {
     box-shadow: 0px 0px 12px 3px rgba(75, 28, 113, 0.5);
 
     &.active-live {
-	filter: grayscale(25%);
+	filter: grayscale(40%);
     }
 
     &.active-live:hover {
@@ -170,5 +170,11 @@ onMounted(() => {
 
 #vu {
     background-image: url("../assets/splash/vu.svg");
+}
+
+@media (orientation: portrait) {
+    .game-grid {
+	grid-template-columns: 1fr 1fr;
+    }
 }
 </style>
