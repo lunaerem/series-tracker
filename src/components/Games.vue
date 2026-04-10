@@ -21,13 +21,33 @@ onMounted(() => {
 	     which I have decided to share below for anyone else looking to finish everything
 	     in a game or get all of its achievements.</p>
 	    <div class="game-grid">
-		<!--<RouterLink class="game active-live" to="/games/game1">
-		    Coming Soon...
-</RouterLink>-->
-		<div class="game">
+		<RouterLink class="game active-live" to="/games/NieR-Replicant" draggable="false" id="nr">
+		    NieR Replicant ver.1.22474487139...
+		</RouterLink>
+		<div class="game" draggable="false" id="na">
+		    NieR: Automata <br /> 
 		    Coming Soon...
 		</div>
-    	
+		<div class="game" draggable="false" id="bt">
+		    Blossom Tales: The Sleeping King <br /> 
+		    Coming Soon...
+		</div>
+		<div class="game" draggable="false" id="xde">
+		    Xenoblade: Definitive Edition <br />
+		    Coming Soon...
+		</div>   	
+		<div class="game" draggable="false" id="x2">
+		    Xenoblade 2 <br />
+		    Coming Soon...
+		</div>
+		<div class="game" draggable="false" id="ls">
+		    The Last Story <br />
+		    Coming Soon...
+		</div>
+		<div class="game" draggable="false" id="tesv">
+		    The Elder Scrolls V: Skyrim <br />
+		    Coming Soon...
+		</div>
 	    </div>
 	</div>
     </section>
@@ -43,9 +63,18 @@ onMounted(() => {
 	    a good order to play through, so this is here for anyone looking to
 	    skip the hassle.</p>
 	    <div class="game-grid">
-		<div class="game">
+		<div class="game" draggable="false" id="kh">
+		    Kingdom Hearts <br />
 		    Coming Soon...
 		</div>	
+		<div class="game" draggable="false" id="lad">
+		    Like a Dragon/Yakuza <br />
+		    Coming Soon...
+		</div>
+		<div class="game" draggable="false" id="vu">
+		    Valve Universe <br />
+		    Coming Soon...
+		</div>
 	    </div>
 	</div>
     </section>
@@ -53,7 +82,7 @@ onMounted(() => {
 
 <style scoped>
 #games-splash {
-    background-image: url("../assets/Background.svg");
+    background-image: url("../assets/splash/main.svg");
 }
 
 .game-grid {
@@ -72,24 +101,80 @@ onMounted(() => {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: grey;
-    background-image: url("../assets/Background.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white;
-    font-weight: 1000;
+    font-weight: 900;
+    color: #fff0ff;
     word-break: break-all;
-    filter: grayscale(80%);
+    filter: grayscale(100%);
     transition: all 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    text-shadow: #4b1c71 1px 0 10px;
+    box-shadow: 0px 0px 12px 3px rgba(75, 28, 113, 0.5);
 
     &.active-live {
-	filter: grayscale(20%);
+	filter: grayscale(40%);
     }
 
     &.active-live:hover {
-	color: #dbb6ee;
+	color: #4b1c71 !important;
+	box-shadow: 0px 0px 25px -8px #CF96FF;
 	filter: grayscale(0%);
+    }
+}
+
+#nr {
+    background-image: url("../assets/splash/nr.svg");
+    color: #0f0529;
+}
+
+#na {
+    background-image: url("../assets/splash/na.svg"); 
+    background-position: 55%;
+}
+
+#bt {
+    background-image: url("../assets/splash/bt.svg");
+    background-position: 85%;
+    color: #0f0529;
+}
+
+#xde {
+    background-image: url("../assets/splash/xde.svg");
+    color: #0f0529;
+}
+
+#x2 {
+    background-image: url("../assets/splash/x2.svg");
+}
+
+#ls {
+    background-image: url("../assets/splash/ls.svg");
+}
+
+#tesv {
+    background-image: url("../assets/splash/tesv.svg");
+    background-position: 20%;
+}
+
+#kh {
+    background-image: url("../assets/splash/kh.svg");
+}
+
+#lad {
+    background-image: url("../assets/splash/lad.svg");
+
+}
+
+#vu {
+    background-image: url("../assets/splash/vu.svg");
+}
+
+@media (orientation: portrait) {
+    .game-grid {
+	grid-template-columns: 1fr 1fr;
     }
 }
 </style>

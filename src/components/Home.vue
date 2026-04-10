@@ -33,7 +33,7 @@ onMounted(() => {
 		</div>
 	    </div>
 	    <div id="games-temp-link">
-		<RouterLink to="/Games/" class="button">Check them out</RouterLink>
+		<RouterLink to="/Games/" class="button" draggable="false">Check them out</RouterLink>
 	    </div>
 	</div>
     </section>
@@ -56,7 +56,7 @@ onMounted(() => {
 		games I enjoy, which hosts documents created by me to aid others 
 		attempting to 100% complete a game or describe the 
 		best play order for a series. <b>This website does not and will 
-		never host game data, ROMs, cracks, etc.</b> For more information,
+		never host game source files, ROMs, cracks, etc.</b> For more information,
 		see the dedicated "Disclaimers" section of the <RouterLink to="/About">
 		About Page.</RouterLink></p>
 	</div>
@@ -65,7 +65,7 @@ onMounted(() => {
 
 <style scoped>
 #home-splash {
-    background-image: url("../assets/Background.svg");
+    background-image: url("../assets/splash/main.svg");
 }
 
 #about-wrapper {
@@ -79,6 +79,7 @@ onMounted(() => {
 	transition: all 0.5s ease;	
 	background-position: left top;
 	background-repeat: no-repeat;
+	box-shadow: 0px 0px 12px 3px rgba(75, 28, 113, 0.5);
 
 	&:hover {
 	    box-shadow: 0px 0px 52px -8px #CF96FF;

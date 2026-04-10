@@ -42,19 +42,19 @@ window.addEventListener('scroll', handleWindowScroll);
     <header id="nav-header"> 
 	<div id="nav-inner" class="set-ratio"> 
 	    <div id="logo-wrapper">
-		<RouterLink to="/home/" id="logo-btn" />
+		<RouterLink to="/home/" id="logo-btn" draggable="false" />
 	    </div>
 	    <nav>
 		<ul>
 		    <li>
-			<RouterLink to="/home">Home</RouterLink>
+			<RouterLink to="/home" draggable="false">Home</RouterLink>
 		    </li>
 		    <li>
-			<RouterLink to="/about">About</RouterLink>
+			<RouterLink to="/about" draggable="false">About</RouterLink>
 		    </li>
 		    <li id="dropdown-li">
 			<div id="dropdown-wrapper">
-			  <RouterLink to="/games">Games</RouterLink>
+			  <RouterLink to="/games" draggable="false">Games</RouterLink>
 			  <!--<div id="dropdown-content">
 			    <RouterLink to="/games/game1">Completion Template</RouterLink>
 			    <RouterLink to="/games/game2">Timeline Template</RouterLink>
@@ -71,7 +71,8 @@ window.addEventListener('scroll', handleWindowScroll);
     <footer>
 	<div id="main-footer" class="set-ratio">	
 	    <a target="_blank" href="https://lunaerem.github.io/personal-website/">© Lunaerem</a>
-	    <a id="src-btn" class="button" href="https://github.com/lunaerem/series-tracker" target="_blank">Website Source</a>
+	    <a id="src-btn" class="button" href="https://github.com/lunaerem/series-tracker"
+		target="_blank" draggable="false">Website Source</a>
 	</div>
     </footer> 
     <dialog id="modal" closedby="any">
@@ -88,7 +89,7 @@ window.addEventListener('scroll', handleWindowScroll);
 		<p style="margin: 0;">Here's some text about the game</p>
 		<div style="margin-top: auto">
 		    <h3 style="border-bottom: 1px solid white;">Platforms</h3>
-		    <div id="chip-container">
+		    <div class="chip-container">
 			<div class="chip">
 			    Test
 			</div>
@@ -146,6 +147,8 @@ nav {
 		color: #fff0ff;
 		height: 100%;
 		transition: color 0.25s ease;
+		user-select: none;
+		-webkit-user-select: none;
 	    }
 
 	    a:hover {
@@ -175,7 +178,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./assets/Logo.svg");
+    background-image: url("./assets/logos/website.svg");
     background-repeat: no-repeat;
     background-position: center;
     min-width: 120px;
