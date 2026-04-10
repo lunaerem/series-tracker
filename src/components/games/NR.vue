@@ -13,12 +13,19 @@ onMounted(() => {
 	<h1>NieR Replicant ver.1.22474487139... <br />
 	Spoiler-Sensitive Guide for 100% Completion</h1>
     </div>
-    <section>
+    <section style="padding-bottom: 0;">
 	<div class="set-ratio">
 	    <h2>Platforms</h2>
-	    <p>Chips (Probably change this from a full section to something more condensed)</p>
-	    <p>Developer: </p>
-	    <p>Publisher: </p>
+	    <div class="chip-container">
+		<a class="chip st" target="_blank" draggable="false" 
+		    href="https://store.steampowered.com/app/1113560/NieR_Replicant_ver122474487139/">Steam</a>
+		<a class="chip xo" target="_blank" draggable="false" 
+		    href="https://www.xbox.com/games/store/nier-replicant-ver122474487139/9nmbk4v30xjr">Xbox One</a>
+		<a class="chip p4" target="_blank" draggable="false" 
+		    href="https://store.playstation.com/product/UP0082-CUSA18774_00-0000000000000000">PlayStation 4</a>
+	    </div>
+	    <p><u>Developer(s):</u> Toylogic, Square Enix, Cavia (Original Game)</p>
+	    <p><u>Publisher:</u> Square Enix</p>
 	</div>
     </section>
     <section>
@@ -147,9 +154,9 @@ onMounted(() => {
 			UNTIL PART 2 IS REACHED!):</i></u></b> 
 			<a target="_blank" href="https://www.youtube.com/watch?v=7-rGmiEsoVA">
 			    https://www.youtube.com/watch?v=7-rGmiEsoVA</a></li>
-		    <li>Full Cross breeding table if interested: 
-			<a target="_blank" href="https://www.reddit.com/r/nier/comments/n87evr/there_wasnt_much_information_on_moonflower/?rdt=35056">
-			    https://www.reddit.com/r/nier/comments/n87evr/there_wasnt_much_information_on_moonflower/?rdt=35056</a></li>
+		    <li><a target="_blank" 
+			href="https://www.reddit.com/r/nier/comments/n87evr/there_wasnt_much_information_on_moonflower/?rdt=35056">
+			Full Cross breeding table if interested</a></li>
 		</ul>
 		<p><u>Fishing Information:</u></p>
 		<ul>

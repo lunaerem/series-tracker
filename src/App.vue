@@ -89,7 +89,7 @@ window.addEventListener('scroll', handleWindowScroll);
 		<p style="margin: 0;">Here's some text about the game</p>
 		<div style="margin-top: auto">
 		    <h3 style="border-bottom: 1px solid white;">Platforms</h3>
-		    <div id="chip-container">
+		    <div class="chip-container">
 			<div class="chip">
 			    Test
 			</div>

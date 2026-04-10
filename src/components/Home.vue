@@ -79,6 +79,7 @@ onMounted(() => {
 	transition: all 0.5s ease;	
 	background-position: left top;
 	background-repeat: no-repeat;
+	box-shadow: 0px 0px 12px 3px rgba(75, 28, 113, 0.5);
 
 	&:hover {
 	    box-shadow: 0px 0px 52px -8px #CF96FF;
