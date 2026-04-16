@@ -89,6 +89,7 @@ onMounted(() => {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    max-width: 99dvw;
 }
 
 .game {
