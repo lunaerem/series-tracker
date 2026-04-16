@@ -89,6 +89,7 @@ onMounted(() => {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    max-width: 99dvw;
 }
 
 .game {
@@ -175,6 +176,12 @@ onMounted(() => {
 @media (orientation: portrait) {
     .game-grid {
 	grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+    .game.active-live {
+	filter: grayscale(0%);
     }
 }
 </style>

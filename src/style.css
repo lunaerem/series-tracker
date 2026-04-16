@@ -2,6 +2,7 @@
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
+    font-size: 16px;
 
     color-scheme: light dark;
     color: #dadada;
@@ -253,6 +254,11 @@ td {
 summary {
     background: linear-gradient(to right, #4b1c71, #0F0529);
     padding: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+	background: linear-gradient(to right, #b57edc, #0f0529);
+    }
 }
 
 details {
@@ -266,5 +272,27 @@ details {
 @media only screen and (hover: none) and (pointer: coarse) and (orientation: landscape) {
     .set-ratio {
 	max-width: 100dvw;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+    code {
+	overflow-wrap: anywhere;
+    }
+
+    li {
+	a {
+	    overflow-wrap: anywhere;
+	}
+    }
+
+    .inner-pad {
+	border: 1px dashed #fff0ff;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    :root {
+	font-size: calc(1rem + 1vw);
     }
 }
