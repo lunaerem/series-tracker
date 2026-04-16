@@ -254,7 +254,7 @@ td {
 summary {
     background: linear-gradient(to right, #4b1c71, #0F0529);
     padding: 0.5rem;
-    pointer: cursor;
+    cursor: pointer;
 
     &:hover {
 	background: linear-gradient(to right, #b57edc, #0f0529);
@@ -264,7 +264,7 @@ summary {
 details {
     margin-bottom: 1rem;
 
-    &[open] {
+    &:open {
 	border: 1px dashed #fff0ff;
     }
 }
@@ -272,6 +272,22 @@ details {
 @media only screen and (hover: none) and (pointer: coarse) and (orientation: landscape) {
     .set-ratio {
 	max-width: 100dvw;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+    code {
+	overflow-wrap: anywhere;
+    }
+
+    li {
+	a {
+	    overflow-wrap: anywhere;
+	}
+    }
+
+    .inner-pad {
+	border: 1px dashed #fff0ff;
     }
 }
 
