@@ -177,4 +177,10 @@ onMounted(() => {
 	grid-template-columns: 1fr 1fr;
     }
 }
+
+@media only screen and (hover: none) and (pointer: coarse) {
+    .game.active-live {
+	filter: grayscale(0%);
+    }
+}
 </style>
