@@ -24,10 +24,9 @@ onMounted(() => {
 		<RouterLink class="game active-live" to="/games/NieR-Replicant" draggable="false" id="nr">
 		    NieR Replicant ver.1.22474487139...
 		</RouterLink>
-		<div class="game" draggable="false" id="na">
-		    NieR: Automata <br /> 
-		    Coming Soon...
-		</div>
+		<RouterLink class="game active-live" to="/games/NieR-Automata" draggable="false" id="na">
+		    NieR: Automata
+		</RouterLink>
 		<div class="game" draggable="false" id="bt">
 		    Blossom Tales: The Sleeping King <br /> 
 		    Coming Soon...
