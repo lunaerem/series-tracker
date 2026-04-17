@@ -277,6 +277,23 @@ details {
     }
 }
 
+.spoiler {
+    background-color: black;
+    color: black;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
 @media only screen and (hover: none) and (pointer: coarse) and (orientation: landscape) {
     .set-ratio {
 	max-width: 100dvw;

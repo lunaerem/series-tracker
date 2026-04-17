@@ -6,6 +6,10 @@ const splash = inject('splash') as any;
 onMounted(() => {
     splash.value = document.querySelector('.splash-img');
 })
+
+function removeSpoiler(event) {
+    event.currentTarget.classList.remove('spoiler');
+}
 </script>
 
 <template>
@@ -172,32 +176,207 @@ onMounted(() => {
 				<li>I also feel that Ending E hits harder after doing the other completion stuff first. :)</li>
 			    </ul>
 			</li>
-		    </ul>
-		    <div class="table-wrapper">
-			<table>
-			    <caption>Table of Farming</caption>
-			    <tbody>
-				<tr>
-				    <th scope="row">Time After Planting</th>
-				    <td>24–42 Hours</td>
-				    <td>42–48 Hours</td>
-				    <td>&gt;48 Hours</td>
-				</tr>
-				<tr>
-				    <th scope="row">Harvested Items</th>
-				    <td>Item you planted</td>
-				    <td>More seeds</td>
-				    <td>Nothing (Plant dies)</td>
-				</tr>
-			    </tbody>
-			</table>
-		    </div>
+			<li>The remainder of this section has been split into further subcategories
+			    <ul>
+				<li>It is recommended to complete each of them before advancing to the next Ending</li>
+				<li>The subcategories do not need to be completed in their listed order, unless stated 
+				    otherwise, but they are presented in a logical ordering.</li>
+			    </ul>
+			</li>
+		    </ul> 
 		    <details>
-			<summary>Test</summary>
+			<summary>Catch All Fish</summary>
 			<ul>
-			    <li>Test</li>
+			    <li>Welcome to the worst part of the game!</li>
+			    <li>It is HIGHLY recommended that you get something to watch on a second monitor 
+				for this.</li>
+			    <li>The game never really explains how fishing works, and it is not quite as intuitive
+				as NieR Replicant’s system.</li>
+			    <li>Essentially, once you have cast your bait, there are three different ways that a fish can bite:
+				<ol>
+				    <li>Dragging the Pod down
+					<ul>
+					    <li>Visual Cue: <span class="green">YES</span></li>
+					    <li>Audio Cue: <span class="green">YES</span></li>
+					    <li>Description: The bait Pod will be dragged underwater with a “plunk” sound,
+						and the fish will start pulling it around. This is most similar to fishing
+						catch indications in other video games.</li>
+					</ul>
+				    </li>
+				    <li>Pod stops movement
+					<ul>
+					    <li>Visual Cue: <span class="green">YES</span></li>
+					    <li>Audio Cue: <span class="red">NO</span></li>
+					    <li>Description: The bait Pod will sometimes be drifting in a certain direction.
+						If it abruptly stops moving, that is the indicator to begin reeling it in.</li>
+					</ul>
+				    </li>
+				    <li>Pod switches directions
+					<ul>
+					    <li>Visual Cue: <span class="green">YES</span></li>
+					    <li>Audio Cue: <span class="red">NO</span></li>
+					    <li>Description: The bait Pod will sometimes be drifting in a certain direction.
+						If it abruptly changes directions, that is the indicator to begin reeling
+						it in.</li>
+					</ul>
+				    </li>
+				</ol>
+			    </li>
+			    <li>Corrections to Common Misconceptions:
+				<ul>
+				    <li>Different locations in a “zone” do not offer different catch chances.</li>
+				    <li>Plug-in Chips that alter item drop rate do not affect fishing.</li>
+				    <li>The fish biting method does not determine what fish is caught (e.g. a Carp can be caught
+					when the bait is dragged down, Pod stops moving, or the Pod switches directions).</li>
+				</ul>
+			    </li>
+			    <li>Each catch is just a simple percent chance. Not much more beyond that. So this could
+				take you hours or just a few tries per fish depending on your real-world luck.</li>
+			    <li>If you are playing the Steam version of the game, it is highly recommended to
+				temporarily bind your reeling in button to be turbo, meaning you can just hold it
+				down to reel in instead of having to mash it (your hands will thank you later).</li>
+			</ul>
+			<div class="table-wrapper">
+			    <table>
+				<caption>Table of Fishing</caption>
+				<thead>
+				    <tr>
+					<th scope="row">Test</th>
+					<th></th>
+				    </tr>
+				</thead>
+				<tbody>
+				    <tr>
+					<th scope="row">Time After Planting</th>
+					<td>24–42 Hours</td>
+					<td>42–48 Hours</td>
+					<td>&gt;48 Hours</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Harvested Items</th>
+					<td>Item you planted</td>
+					<td>More seeds</td>
+					<td>Nothing (Plant dies)</td>
+				    </tr>
+				</tbody>
+			    </table>
+			</div>
+		    </details>
+		    <details>
+			<summary>Get All Pod Programs</summary>
+			<ul>
+			    <li><a target="_blank" href="https://nierautomata.wiki.fextralife.com/Pod+Programs">
+				List with locations</a></li>
 			</ul>
 		    </details>
+		    <details>
+			<summary>Plug-In Chips</summary>
+			<ul>
+			    <li><a target="_blank" 
+				href="https://steamcommunity.com/sharedfiles/filedetails/?id=2486382617">
+				Full List of Chips</a></li>
+			    <li><u>Note:</u> These are not tracked anywhere in-game. It is just listed 
+				here if you are looking for specific ones.</li>
+			</ul>
+		    </details> 
+		    <details>
+			<summary>Collect All Weapons and Pods</summary>
+			<ul>
+			    <li><a target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=885348110">
+				List of Weapons and Pods locations</a></li>
+			    <li>By this point, you will likely have all of the pods, but their locations are listed here anyways
+				in case.</li>
+			    <li>At the bottom of the list, there are three weapons that are blocked out with spoiler 
+				tags. <b><u><i>DO NOT LOOK AT THOSE!</i></u></b></li>
+			    <li>Two of the weapons are Type-3 Fists and Angel’s Folly, which can both be bought from Emil’s
+				store if you stop him right outside the Resistance Camp.</li>
+			    <li>The third weapon is a bit more complex to get. If you have not collected it yet, then
+				listed below is a spoiler guide on how to get it. There will be non-spoiler hints provided and
+				explicit steps to follow if needed obscured by spoiler tags. 
+				<ol>
+				    <li>Hint: There is a side quest prerequisite. (<span class="spoiler" 
+					@click="removeSpoiler($event)">Complete the Emil’s Memories side quest.</span>)</li>
+				    <li>Hint: A nomad shopkeeper must be spoken to. Make sure they discuss their place
+					of residence. (<span class="spoiler" @click="removeSpoiler($event)">Talk with 
+					    Emil and make sure he says the line about where he lives deep underground.</span>)</li>
+				    <li>Hint: Find their place of residence. (<span class="spoiler" @click="removeSpoiler($event)">
+					Go to Emil’s house in the underground cavern.</span>)</li>
+				    <li>Hint: Take the item. (<span class="spoiler" @click="removeSpoiler($event)">There is 
+					an item called Emil Mask that must be taken from his house.</span>)</li>
+				    <li>Hint: Speak to the shopkeeper again. (<span class="spoiler" @click="removeSpoiler($event)">
+					Talk with Emil again. He should mention something about thieves raiding his home.</span>)</li>
+				    <li>Hint: Return to their place of residence as 9S. (<span class="spoiler" 
+					@click="removeSpoiler($event)">Return to Emil’s home as 9S because there will be a new 
+					chest with a hack lock. Open it.</span>)</li>
+				</ol>
+			    </li>
+			</ul>
+		    </details>
+		    <details>
+			<summary>Achieve Max Level</summary>
+			<ul>
+			    <li>The maximum level is 99</li>
+			    <li>Equip all of your Exp Up Plug-in Chips as 9S</li>
+			    <li>Transport to the Amusement Park</li>
+			    <li>Head to the Amusement Park main entrance</li>
+			    <li>Awake and hack the bunny</li>
+			    <li>Reload the area (I.E. By fast travelling away and back) and repeat until
+				level is maxed out</li>
+			</ul>
+		    </details>
+		    <details>
+			<summary>Finish All Side Quests</summary>
+			<ul>
+			    <li><a target="_blank" 
+				href="https://www.reddit.com/r/nier/comments/5wsvix/spoiler_full_quest_list_in_all_quests_order/">
+				Full Quest List</a> (Comments may contain spoilers!)</li>
+			    <li>Note: There is a very easily missable (Missable as in the game does not tell you about it but
+				is never permanently inaccessible) secret boss when doing the Flooded City Colosseum that
+				is highly recommended to experience. After completing the S Rank match, go into the spectator
+				stands, and near the top left of the entrance, there is a NPC named “Resistance Secretary.”
+				Just keep talking with them. There is no in-game indication that this exists, and all external
+				resources completely spoil what it is, so I thought it best to mention it here.</li>
+			    <li>There is one “joke” Ending (Ending Y) that is permanently missable tied to a side quest that
+				unlocks once you have obtained all weapons and they are all upgraded to level 4.</li>
+			    <li>In the aforementioned side quest, there will be a boss fight where you must let it do its
+				super move as indicated by a timer. You need to let the timer run out for the Ending to
+				activate. Make sure you save in two slots before starting this side quest just in case!</li>
+			    <li>Once you have completed all of the side quests, you are free to look at the achievements
+				list, including the hidden ones.</li>
+			</ul>
+		    </details>
+		    <details>
+			<summary>Get All Endings</summary>
+			<p class="important-txt">Do not look at the Endings list or go for the “joke” Endings until you have 100% quest 
+			    completion!</p>
+			<ul>
+			    <li>Use <a target="_blank"
+				href="https://steamcommunity.com/sharedfiles/filedetails/?l=german&id=885311665">this guide</a></li>
+			    <li>This lists all of the Endings, including C, D, and E! Obviously do not look at the entries
+				of those due to spoilers, but this list is mainly used for finding the “joke” Endings. </li>
+			</ul>
+		    </details>
+		    <details>
+			<summary>Collect All Intel Entries</summary>
+			<p class="important-txt">Do not look at the Enemy Intel list until you have 100% quest completion!</p>
+			<ul>
+			    <li><a target="_blank" href="https://nierautomata.wiki.fextralife.com/Archives">
+				Archives Tab</a></li>
+			     <li><a target="_blank" href="https://gamefaqs.gamespot.com/boards/168677-nier-automata/75100125">
+				Tutorials Tab</a></li>
+			    <li><a target="_blank" href="https://nierautomata.wiki.fextralife.com/Enemies">
+				Enemy Intel Tab</a></li>
+			</ul>
+		    </details>
+		    <ul>
+			<li>Once you are satisfied with all you want to do of the above, use Chapter Select to go back and do
+			    the other character’s Ending for either Ending C or D.
+			    <ul>
+				<li>Before doing this however, make sure that you have the Network Connection option enabled
+				    and working if you do not have already.</li>
+			    </ul>
+			</li>
+		    </ul>
 		</div>
 	    </details>
 	    <details>
