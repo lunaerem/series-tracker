@@ -215,6 +215,14 @@ footer {
     }
 }
 
+.ns {
+    background-color: #e60012;
+
+    &:hover {
+	box-shadow: 0px 0px 12px 3px #e60012;
+    }
+}
+
 .inner-pad {
     padding-right: 0.5rem;
     padding-left: 0.5rem;

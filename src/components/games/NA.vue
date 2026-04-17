@@ -18,12 +18,13 @@ onMounted(() => {
 	    <h2>Platforms</h2>
 	    <div class="chip-container">
 		<a class="chip st" target="_blank" draggable="false" 
-		    href="">Steam</a>
+		    href="https://store.steampowered.com/app/524220/NieRAutomata/">Steam</a>
 		<a class="chip xo" target="_blank" draggable="false" 
-		    href="">Xbox One</a>
+		    href="https://www.xbox.com/games/store/nierautomata-become-as-gods-edition/BPPZVT8BZ15N">Xbox One</a>
 		<a class="chip p4" target="_blank" draggable="false" 
-		    href="">PlayStation 4</a>
-		<a class="chip ns" target="_blank" draggable="false" href="">Nintendo Switch</a>
+		    href="https://www.playstation.com/games/nier-automata/">PlayStation 4</a>
+		<a class="chip ns" target="_blank" draggable="false"
+		    href="https://www.nintendo.com/store/products/nier-automata-the-end-of-yorha-edition-switch/">Nintendo Switch</a>
 	    </div>
 	    <p><u>Developer(s):</u> PlatinumGames, Square Enix, QLOC</p>
 	    <p><u>Publisher:</u> Square Enix</p>
