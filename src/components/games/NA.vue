@@ -120,7 +120,7 @@ function removeSpoiler(event) {
 				<li>The game only lets you carry a maximum of 200 Plug-in Chips, so you will need
 				    to fuse/sell a bunch if you are going for 100% completion.</li>
 				<li>Below is a chart for optimal fusing:</li>
-				<li>This is where the image will go</li>
+				<img alt="NieR Automata Plug-In Chip Optimal Fusing Chart" src="../../assets/NAChart.svg" />
 			    </ul>
 			</li>
 			<li>Just keep playing through the game and enjoy yourself!</li>
@@ -962,5 +962,9 @@ function removeSpoiler(event) {
 <style scoped>
 #auto-splash {
     background-image: url("../../assets/splash/na.svg");
+}
+
+ul > img {
+    max-height: 40rem;
 }
 </style>
