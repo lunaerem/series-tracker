@@ -262,7 +262,7 @@ td {
 .long-t {
     overflow: auto;
     display: block;
-    max-height: 500px;
+    max-height: 80dvh;
     border-collapse: separate;
     border-spacing: 0;
     -webkit-overflow-scrolling: touch;

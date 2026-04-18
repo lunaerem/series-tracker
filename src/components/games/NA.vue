@@ -7,7 +7,7 @@ onMounted(() => {
     splash.value = document.querySelector('.splash-img');
 })
 
-function removeSpoiler(event) {
+function removeSpoiler(event: any) {
     event.currentTarget.classList.remove('spoiler');
 }
 </script>
@@ -857,12 +857,12 @@ function removeSpoiler(event) {
 				    <li>Hint: A nomad shopkeeper must be spoken to. Make sure they discuss their place
 					of residence. (<span class="spoiler" @click="removeSpoiler($event)">Talk with 
 					    Emil and make sure he says the line about where he lives deep underground.</span>)</li>
-				    <li>Hint: Find their place of residence. (<span class="spoiler" @click="removeSpoiler($event)">
-					Go to Emil’s house in the underground cavern.</span>)</li>
+				    <li>Hint: Find their place of residence. (<span class="spoiler" @click="removeSpoiler($event)">Go
+					to Emil’s house in the underground cavern.</span>)</li>
 				    <li>Hint: Take the item. (<span class="spoiler" @click="removeSpoiler($event)">There is 
 					an item called Emil Mask that must be taken from his house.</span>)</li>
-				    <li>Hint: Speak to the shopkeeper again. (<span class="spoiler" @click="removeSpoiler($event)">
-					Talk with Emil again. He should mention something about thieves raiding his home.</span>)</li>
+				    <li>Hint: Speak to the shopkeeper again. (<span class="spoiler" @click="removeSpoiler($event)">Talk
+					with Emil again. He should mention something about thieves raiding his home.</span>)</li>
 				    <li>Hint: Return to their place of residence as 9S. (<span class="spoiler" 
 					@click="removeSpoiler($event)">Return to Emil’s home as 9S because there will be a new 
 					chest with a hack lock. Open it.</span>)</li>
