@@ -51,8 +51,8 @@ function removeSpoiler(event) {
 	    before playing NieR Automata, but it is not strictly necessary. NieR Automata spoils some of
 	    Replicant’s big reveals, but knowing the story of Replicant is not necessary for understanding
 	    Automata’s.</p>
-	    <p><u>Recommendation:</u> It is highly recommended that you play with a controller. On some
-	    computers, the game also bugs out if you are not playing with a controller.</p>
+	    <p><u>Recommendation:</u> It is highly recommended that you play with a controller if you are on PC. 
+	    On some computers, the game also bugs out if you are not playing with a controller.</p>
 	    <p><u>Recommendation:</u> If you are on PC, keep in mind that this is a Square Enix PC port,
 	    so it has a few technical problems. However, a decent number of them were fixed in a 2021 patch a
 	    few years after the game was released. The only major widespread problem is that the game’s
@@ -237,7 +237,7 @@ function removeSpoiler(event) {
 				down to reel in instead of having to mash it (your hands will thank you later).</li>
 			</ul>
 			<div class="table-wrapper" style="padding: 1rem;">
-			    <table>
+			    <table class="long-t">
 				<caption><u>Table of Fishing</u>
 				    <p>Fish are sorted by the order in which they appear in the Fishing Encyclopedia</p>
 				</caption>

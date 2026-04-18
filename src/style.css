@@ -259,6 +259,32 @@ td {
     background: #0F0529;
 }
 
+tbody > tr > td:nth-of-type(even) {
+    background: rgba(211, 211, 211, 0.1);
+}
+
+.long-t {
+    overflow: auto;
+    display: block;
+    max-height: 500px;
+    border-collapse: separate;
+    border-spacing: 0;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain; 
+
+    thead {
+	position: sticky;
+	top: 0;
+    }
+
+    tbody {
+	th:first-child {	
+	    position: sticky;
+	    left: 0;
+	}
+    }
+}
+
 summary {
     background: linear-gradient(to right, #4b1c71, #0F0529);
     padding: 0.5rem;
@@ -287,11 +313,11 @@ details {
 }
 
 .green {
-    background-color: green;
+    background-color: #38761d !important;
 }
 
 .red {
-    background-color: red;
+    background-color: #990000 !important;
 }
 
 @media only screen and (hover: none) and (pointer: coarse) and (orientation: landscape) {
