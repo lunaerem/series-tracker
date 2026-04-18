@@ -236,27 +236,585 @@ function removeSpoiler(event) {
 				temporarily bind your reeling in button to be turbo, meaning you can just hold it
 				down to reel in instead of having to mash it (your hands will thank you later).</li>
 			</ul>
-			<div class="table-wrapper">
+			<div class="table-wrapper" style="padding: 1rem;">
 			    <table>
-				<caption>Table of Fishing</caption>
+				<caption><u>Table of Fishing</u>
+				    <p>Fish are sorted by the order in which they appear in the Fishing Encyclopedia</p>
+				</caption>
 				<thead>
 				    <tr>
-					<th scope="row">Test</th>
-					<th></th>
+					<td>Green = Location with Best Chances to Catch</td>
+					<th scope="col">Forest</th>
+					<th scope="col">Flooded City: Missile</th>
+					<th scope="col">Underground Cavern</th>
+					<th scope="col">Desert: Oil Field</th>
+					<th scope="col">Amusement Park: Bridge</th>
+					<th scope="col">City Ruins</th>
+					<th scope="col">Amusement Park: Sewers</th>
+					<th scope="col">City Ruins: Ravine</th>
+					<th scope="col">Desert: Oasis</th>
+					<th scope="col">Flooded City: Sunken Buildings</th>
 				    </tr>
 				</thead>
 				<tbody>
 				    <tr>
-					<th scope="row">Time After Planting</th>
-					<td>24–42 Hours</td>
-					<td>42–48 Hours</td>
-					<td>&gt;48 Hours</td>
+					<th scope="row">Arowana</th>
+					<td>3.16%</td>
+					<td></td>
+					<td>4.94%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>3.10%</td>
+					<td class="green">6.02%</td>
+					<td></td>
 				    </tr>
 				    <tr>
-					<th scope="row">Harvested Items</th>
-					<td>Item you planted</td>
-					<td>More seeds</td>
-					<td>Nothing (Plant dies)</td>
+					<th scope="row">Twinfish</th>
+					<td></td>
+					<td></td>
+					<td class="green">9.51%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Killifish</th>
+					<td>24.33%</td>
+					<td></td>
+					<td>38.02%</td>
+					<td></td>
+					<td>30.67%</td>
+					<td>24.44%</td>
+					<td></td>
+					<td>23.87%</td>
+					<td class="green">46.30%</td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Carp</th>
+					<td>12.17%</td>
+					<td></td>
+					<td>19.01%</td>
+					<td></td>
+					<td>15.34%</td>
+					<td>12.22%</td>
+					<td></td>
+					<td>11.93%</td>
+					<td class="green">23.15%</td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Bloat Fish</th>
+					<td></td>
+					<td></td>
+					<td class="green">9.51%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Koi Carp</th>
+					<td>12.17%</td>
+					<td></td>
+					<td>19.01%</td>
+					<td></td>
+					<td>15.34%</td>
+					<td>12.22%</td>
+					<td></td>
+					<td>11.93%</td>
+					<td class="green">23.15%</td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Fur Carp</th>
+					<td class="green">3.16%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>3.10%</td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Freshwater Ray</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">1.84%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Arapaima</th>
+					<td class="green">1.46%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Oil Sardine</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">21.83%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Beetle Fish</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">1.39%</td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Water Flea</th>
+					<td></td>
+					<td class="green">13.97%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>10.92%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Twoface</th>
+					<td></td>
+					<td class="green">1.82%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>1.42%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Coelacanth</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">2.73%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Blowfish</th>
+					<td></td>
+					<td class="green">6.98%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>5.46%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Swordfish</th>
+					<td></td>
+					<td class="green">0.84%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Mackerel</th>
+					<td></td>
+					<td class="green">6.98%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>5.46%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Horseshoe Crab</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">5.46%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Starfish</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">10.92%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Bream</th>
+					<td></td>
+					<td class="green">6.98%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>5.46%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Basking Shark</th>
+					<td></td>
+					<td class="green">6.98%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Killifish Machine</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">24.44%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Koi Carp Machine</th>
+					<td>12.17%</td>
+					<td></td>
+					<td></td>
+					<td>10.92%</td>
+					<td class="green">15.34%</td>
+					<td>12.22%</td>
+					<td></td>
+					<td>11.93%</td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Arapaima Machine</th>
+					<td>6.08%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">7.67%</td>
+					<td></td>
+					<td></td>
+					<td>5.97%</td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Carp Machine</th>
+					<td>12.17%</td>
+					<td></td>
+					<td></td>
+					<td>10.92%</td>
+					<td></td>
+					<td class="green">12.22%</td>
+					<td></td>
+					<td>11.93%</td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Bloat Fish Machine</th>
+					<td class="green">3.16%</td>
+					<td></td>
+					<td></td>
+					<td>2.84%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>3.10%</td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Blowfish Machine</th>
+					<td></td>
+					<td>6.98%</td>
+					<td></td>
+					<td class="green">10.92%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>5.46%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Swordfish Machine</th>
+					<td></td>
+					<td class="green">0.84%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Starfish Machine</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">10.92%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>5.46%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Bream Machine</th>
+					<td></td>
+					<td>6.98%</td>
+					<td></td>
+					<td class="green">10.92%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>5.46%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Coelacanth Machine</th>
+					<td></td>
+					<td class="green">1.82%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Mackerel Machine</th>
+					<td></td>
+					<td>6.98%</td>
+					<td></td>
+					<td class="green">10.92%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>5.46%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Horseshoe Crab Machine</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">5.46%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Arowana Machine</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">3.10%</td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Basking Shark Machine</th>
+					<td></td>
+					<td class="green">6.98%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Freshwater Ray Machine</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">3.99%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Machine Lifeform Head</th>
+					<td>0.97%</td>
+					<td>0.70%</td>
+					<td></td>
+					<td>0.87%</td>
+					<td>0.92%</td>
+					<td class="green">2.22%</td>
+					<td>0.83%</td>
+					<td>0.95%</td>
+					<td></td>
+					<td>0.76%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Tyre</th>
+					<td></td>
+					<td>7.54%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">20.66%</td>
+					<td></td>
+					<td></td>
+					<td>7.53%</td>
+				    </tr>
+				    <tr>
+					<th scope="row">Gas Cylinder</th>
+					<td>9.00%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">20.66%</td>
+					<td>9.07%</td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Battery</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>8.95%</td>
+					<td></td>
+					<td></td>
+					<td class="green">20.66%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Broken Firearm</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>8.90%</td>
+					<td></td>
+					<td class="green">20.66%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Iron Pipe (1 Time)</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="green">16.53%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				    </tr>
+				    <tr>
+					<th scope="row">Pod B (1 Time)</th>
+					<td></td>
+					<td class="green">16.62%</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>16.59%</td>
 				    </tr>
 				</tbody>
 			    </table>
