@@ -259,10 +259,6 @@ td {
     background: #0F0529;
 }
 
-tbody > tr > td:nth-of-type(even) {
-    background: rgba(211, 211, 211, 0.1);
-}
-
 .long-t {
     overflow: auto;
     display: block;
@@ -282,6 +278,11 @@ tbody > tr > td:nth-of-type(even) {
 	    position: sticky;
 	    left: 0;
 	}
+
+	tr > td:nth-of-type(even) {
+	    background: rgba(211, 211, 211, 0.1);
+	}
+
     }
 }
 
