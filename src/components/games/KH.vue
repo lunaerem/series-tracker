@@ -8,8 +8,7 @@ const splash = inject("splash") as any;
 onMounted(() => {
   splash.value = document.querySelector(".splash-img");
 
-  const timeline = document.querySelector(".timeline-inner");
-  loadJSON(timeline, "./data/kh.json");
+  loadJSON("./data/kh.json");
 });
 </script>
 
@@ -31,19 +30,7 @@ onMounted(() => {
       <h2>Timeline</h2>
       <div class="timeline-wrapper">
         <button @click="moveLeft()">Left</button>
-        <div class="timeline-inner">
-          <!--
-          <div class="timeline-entry">
-            <p>#1</p>
-          </div>
-          <div class="timeline-entry" style="left: 50%">
-            <p>#2</p>
-          </div>
-          <div class="timeline-entry" style="right: 0">
-            <p>#3</p>
-          </div>
-	    -->
-        </div>
+        <div class="timeline-inner"></div>
         <button @click="moveRight()">Right</button>
       </div>
     </div>
