@@ -1,80 +1,158 @@
 <script setup lang="ts">
-import { inject, onMounted } from 'vue';
+import { inject, onMounted } from "vue";
 
-const splash = inject('splash') as any;
+const splash = inject("splash") as any;
 
 onMounted(() => {
-    splash.value = document.querySelector('.splash-img');
-})
+  splash.value = document.querySelector(".splash-img");
+});
 </script>
 
 <template>
-    <div id="about-splash" class="splash-img">
-	<h1>About</h1>
+  <div id="about-splash" class="splash-img">
+    <h1>About</h1>
+  </div>
+  <section>
+    <div class="set-ratio">
+      <h2>Expanded Description</h2>
+      <p>
+        Over the years of playing a wide variety of video games, I have amassed
+        quite a collection of documents I have created and used to complete each
+        game 100%. I wanted to share some of them since there seems to be a lack
+        of completion documentation that allows someone to achieve 100%
+        completion in a single playthrough with minimal spoilers. As someone who
+        loves 100% completing games, whether that be getting all achievements,
+        getting all upgrades, unlocking everything, etc. I also have a passion
+        for collecting, compiling, and organising information about some of my
+        favourite series. Therefore, I have also decided to use this website for
+        hosting several lists I have created that detail the recommended play
+        order, platform availability, and version differences of several
+        franchises for anyone who does not want the hassle of trying to piecing
+        together that information by themselves, so they can just get to playing
+        and enjoying the experiences.
+      </p>
     </div>
-    <section>
-	<div class="set-ratio">
-	    <h2>Expanded Description</h2>
-	    <p>Over the years of playing a wide variety of video games, I have amassed quite a collection of 
-	    documents I have created and used to complete each game 100%. I wanted to share some of them since
-	    there seems to be a lack of completion documentation that allows someone to achieve 100% completion
-	    in a single playthrough with minimal spoilers. As someone who loves 100% completing games, whether
-	    that be getting all achievements, getting all upgrades, unlocking everything, etc. I also have a
-	    passion for collecting, compiling, and organising information about some of my favourite series.
-	    Therefore, I have also decided to use this website for hosting several lists I have created that
-	    detail the recommended play order, platform availability, and version differences of several
-	    franchises for anyone who does not want the hassle of trying to piecing together that information
-	    by themselves, so they can just get to playing and enjoying the experiences.</p>
-	</div>
-    </section>
-    <section>
-	<div class="set-ratio">
-	    <h2>Disclaimers</h2>
-	    <p>As stated previously, this unofficial fan-made website is exclusively for hosting and 
-		providing information that I have compiled or created for the 
-		video games that I enjoy. Furthermore, no money is made from this 
-		website's operations, nor is it affiliated with the games' developers or publishers. 
-		<b>This website does not and will never host game source files, ROMs, cracks, etc.</b>
-		All information and content is created/provided adhering to a game's or publisher's content
-		policy, if one is provided. For questions, clarifications, or requests, please reach out using 
-		one of the following methods:</p>
-	    <ul>
-		<li><a target="_blank" href="">GitHub Repository Issues</a></li>
-		<li>Feedback Form (Coming Soon)</li>
-	    </ul>
-	</div>
-    </section>
-    <section>
-	<div class="set-ratio">
-	    <h2>Attributions/Licensing</h2>
-	    <ul>
-		<li>Website created by Andrew (<a target="_blank" class="hyperlink" href="https://github.com/lunaerem">Lunaerem</a>), source code available 
-		<a target="_blank" class="hyperlink" href="https://github.com/lunaerem/series-tracker">here</a></li>
-		<li>As this is a fan-made website, it is not affiliated with the games' developers or publishers. 
-		    All trademarks and copyrights of games belong to their respecitve owners.</li>
-		<li>Except where otherwise stated, all original information and text written by Andrew (Lunaerem) for this website is 
-		    licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.
-		    <ul>
-			<li><a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Read the license summary</a></li>
-			<li><a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">Read the full legal
-			    code of the license</a></li>
-		    </ul>
-		</li>
-		<li>The usage of this website or its contents for training AI is strictly prohibited.</li>
-		<li>Hosted using <a target="_blank" class="hyperlink" href="https://docs.github.com/en/pages">GitHub Pages</a></li>
-		<li><a target="_blank" class="hyperlink" href="https://vite.dev/">Vite</a>,
-		included under the <a target="_blank" class="hyperlink" href="https://opensource.org/license/MIT">MIT License</a></li>
-		<li><a target="_blank" class="hyperlink" href="https://vuejs.org/">Vue</a>,
-		included under the <a target="_blank" class="hyperlink" href="https://opensource.org/license/MIT">MIT License</a></li>
-		<li><a target="_blank" class="hyperlink" href="https://router.vuejs.org/">Vue Router</a>,
-		included under the <a target="_blank" class="hyperlink" href="https://opensource.org/license/MIT">MIT License</a></li>
-	    </ul>	
-	</div>
-    </section>
+  </section>
+  <section>
+    <div class="set-ratio">
+      <h2>Disclaimers</h2>
+      <p>
+        As stated previously, this unofficial fan-made website is exclusively
+        for hosting and providing information that I have compiled or created
+        for the video games that I enjoy. Furthermore, no money is made from
+        this website's operations, nor is it affiliated with the games'
+        developers or publishers.
+        <b
+          >This website does not and will never host game source files, ROMs,
+          cracks, etc.</b
+        >
+        All information and content is created/provided adhering to a game's or
+        publisher's content policy, if one is provided. For questions,
+        clarifications, or requests, please reach out using one of the following
+        methods:
+      </p>
+      <ul>
+        <li><a target="_blank" href="">GitHub Repository Issues</a></li>
+        <li>Feedback Form (Coming Soon)</li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <div class="set-ratio">
+      <h2>Attributions/Licensing</h2>
+      <ul>
+        <li>
+          Website created by Andrew (<a
+            target="_blank"
+            class="hyperlink"
+            href="https://github.com/lunaerem"
+            >Lunaerem</a
+          >), source code available
+          <a
+            target="_blank"
+            class="hyperlink"
+            href="https://github.com/lunaerem/series-tracker"
+            >here</a
+          >
+        </li>
+        <li>
+          As this is a fan-made website, it is not affiliated with the games'
+          developers or publishers. All trademarks and copyrights of games
+          belong to their respecitve owners.
+        </li>
+        <li>
+          Except where otherwise stated, all original information and text
+          written by Andrew (Lunaerem) for this website is licensed under the
+          Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+          International (CC BY-NC-SA 4.0) license.
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                >Read the license summary</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"
+                >Read the full legal code of the license</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          The usage of this website or its contents for training AI is strictly
+          prohibited.
+        </li>
+        <li>
+          Hosted using
+          <a
+            target="_blank"
+            class="hyperlink"
+            href="https://docs.github.com/en/pages"
+            >GitHub Pages</a
+          >
+        </li>
+        <li>
+          <a target="_blank" class="hyperlink" href="https://vite.dev/">Vite</a
+          >, included under the
+          <a
+            target="_blank"
+            class="hyperlink"
+            href="https://opensource.org/license/MIT"
+            >MIT License</a
+          >
+        </li>
+        <li>
+          <a target="_blank" class="hyperlink" href="https://vuejs.org/">Vue</a
+          >, included under the
+          <a
+            target="_blank"
+            class="hyperlink"
+            href="https://opensource.org/license/MIT"
+            >MIT License</a
+          >
+        </li>
+        <li>
+          <a target="_blank" class="hyperlink" href="https://router.vuejs.org/"
+            >Vue Router</a
+          >, included under the
+          <a
+            target="_blank"
+            class="hyperlink"
+            href="https://opensource.org/license/MIT"
+            >MIT License</a
+          >
+        </li>
+      </ul>
+    </div>
+  </section>
 </template>
 
 <style scoped>
 #about-splash {
-    background-image: url("../assets/splash/main.svg");
+  background-image: url("../assets/splash/main.svg");
 }
 </style>
