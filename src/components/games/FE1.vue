@@ -34,7 +34,33 @@ function removeSpoiler(event: any) {
     <div class="set-ratio">
       <h2>General Tips</h2>
       <ul>
-        <li>Placeholder</li>
+        <li>
+          Only Marth can visit villages (The multi-tile buildings with the walls
+          in front), but anyone can visit the smaller buildings. Try to visit as
+          many villages and buildings as possible because they give good rewards
+          and drop hints toward game mechanics, stories, and secrets
+        </li>
+        <li>
+          Save Warp staves until you truly need them, as they are rather limited
+          in the game
+        </li>
+        <li>
+          Promote units as soon as possible because promotion raises stats to
+          the class's base values
+        </li>
+        <li>
+          Keep Caeda alive through the entire game if you want the best ending
+        </li>
+        <li>
+          Arenas are infinite in this game, so they are an easy source of
+          farming
+        </li>
+        <li>
+          Thieves who steal items from chests do not drop the items when
+          defeated, unlike later entries in the series. Either block the chests
+          with units or get to them before the thieves to get full rewards (Warp
+          staves are especially useful for these circumstances)
+        </li>
       </ul>
     </div>
   </section>
@@ -80,9 +106,264 @@ function removeSpoiler(event: any) {
           </thead>
           <tbody>
             <tr>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>1</td>
+              <td>Marth</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Caeda</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Jagen</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Cain</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Abel</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Draug</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Gordon</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Wrys</td>
+              <td>Visit the western village with Marth</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ogma</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Barst</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Bord</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Cord</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Castor</td>
+              <td>Enemy, talk with Caeda</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Darros</td>
+              <td>Enemy, talk with Marth</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Julian</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Lena</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Navarre</td>
+              <td>Enemy, talk with Caeda</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Merric</td>
+              <td>Visit the northern village with Marth</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Matthis</td>
+              <td>Enemy, talk with Lena</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Hardin</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Wolf</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Sedgar</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Roshea</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Vyland</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Wendell</td>
+              <td>Enemy, talk with Marth or Merric</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Rickard</td>
+              <td>Enemy, talk with Marth or Julian</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Bantu</td>
+              <td>Visit the village with Marth</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Caesar</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Radd</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Roger</td>
+              <td>Enemy, talk with Caeda</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Jeorge</td>
+              <td>Visit the village with Marth</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Maria</td>
+              <td>Enemy, talk with Marth</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Minerva</td>
+              <td>Enemy, talk with Marth, Maria must be recruited already</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Linde</td>
+              <td>Visit the village with Marth</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Jake</td>
+              <td>Enemy, talk with Caeda</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Midia</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Dolph</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Macellan</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Tomas</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>Boah</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Beck</td>
+              <td>Visit the village with Marth</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>Astram</td>
+              <td>Enemy, talk with Midia</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Palla</td>
+              <td>Enemy, talk with Marth</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>Catria</td>
+              <td>Enemy, talk with Marth</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>Arran</td>
+              <td>Visit the village with Marth*</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>Samson</td>
+              <td>Visit the village with Marth*</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>Xane</td>
+              <td>Enemy, talk with Marth</td>
+            </tr>
+            <tr>
+              <td>18</td>
+              <td>Est</td>
+              <td>Enemy, talk with Marth</td>
+            </tr>
+            <tr>
+              <td>19</td>
+              <td>Tiki</td>
+              <td>Enemy, talk with Bantu</td>
+            </tr>
+            <tr>
+              <td>20</td>
+              <td>Lorenz</td>
+              <td>Enemy, talk with Caeda</td>
+            </tr>
+            <tr>
+              <td>24</td>
+              <td>Elice</td>
+              <td>Automatically at beginning of chapter</td>
+            </tr>
+            <tr>
+              <td>25</td>
+              <td>Gotoh</td>
+              <td>Automatically at beginning of chapter</td>
             </tr>
           </tbody>
         </table>
@@ -94,9 +375,5 @@ function removeSpoiler(event: any) {
 <style scoped>
 #auto-splash {
   background-image: url("../../assets/splash/na.svg");
-}
-
-ul > img {
-  max-height: 40rem;
 }
 </style>
