@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { inject, onMounted } from "vue";
-import { removeSpoiler } from "/src/spoilers.ts";
+import { removeSpoiler } from "../../spoilers.ts";
 
 const splash = inject("splash") as any;
 

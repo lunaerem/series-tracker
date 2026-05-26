@@ -2,7 +2,7 @@ export function removeSpoiler(event: any) {
   event.currentTarget.classList.remove("spoiler");
 }
 
-export function revealAllSpoilers(event: any) {
+export function revealAllSpoilers() {
   let spoilers = Array.from(document.getElementsByClassName("spoiler"));
 
   spoilers.forEach((element) => {

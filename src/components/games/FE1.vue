@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { inject, onMounted } from "vue";
-import { removeSpoiler, revealAllSpoilers } from "/src/spoilers.ts";
+import { removeSpoiler, revealAllSpoilers } from "../../spoilers.ts";
 
 const splash = inject("splash") as any;
 
@@ -92,7 +92,11 @@ onMounted(() => {
               Click on them or the button below to reveal their information at
               your discretion.
             </p>
-            <button @click="revealAllSpoilers($event)">
+            <button
+              class="button"
+              style="cursor: pointer; margin-bottom: 1rem"
+              @click="revealAllSpoilers()"
+            >
               Reveal all Spoiler-tagged Entries
             </button>
           </caption>
@@ -661,7 +665,8 @@ onMounted(() => {
               </td>
               <td>
                 <span class="spoiler" @click="removeSpoiler($event)"
-                  >Visit the village with Marth*</span
+                  >Visit the village with Marth* (Mutually exclusive with
+                  Samson)</span
                 >
               </td>
             </tr>
@@ -674,7 +679,8 @@ onMounted(() => {
               </td>
               <td>
                 <span class="spoiler" @click="removeSpoiler($event)"
-                  >Visit the village with Marth*</span
+                  >Visit the village with Marth* (Mutually exclusive with
+                  Arran)</span
                 >
               </td>
             </tr>
