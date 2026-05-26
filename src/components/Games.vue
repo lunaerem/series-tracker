@@ -193,6 +193,11 @@ onMounted(() => {
   background-image: url("../assets/splash/vu.svg");
 }
 
+#fe1 {
+  background-image: url("../assets/splash/fe1.svg");
+  background-position: 90%;
+}
+
 @media (orientation: portrait) {
   .game-grid {
     grid-template-columns: 1fr 1fr;

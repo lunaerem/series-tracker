@@ -374,6 +374,6 @@ function removeSpoiler(event: any) {
 
 <style scoped>
 #auto-splash {
-  background-image: url("../../assets/splash/na.svg");
+  background-image: url("../../assets/splash/fe1.svg");
 }
 </style>
