@@ -1,23 +1,12 @@
 <script setup lang="ts">
 import { inject, onMounted } from "vue";
+import { removeSpoiler, revealAllSpoilers } from "/src/spoilers.ts";
 
 const splash = inject("splash") as any;
 
 onMounted(() => {
   splash.value = document.querySelector(".splash-img");
 });
-
-function removeSpoiler(event: any) {
-  event.currentTarget.classList.remove("spoiler");
-}
-
-function revealAllSpoilers(event: any) {
-  let spoilers = Array.from(document.getElementsByClassName("spoiler"));
-
-  spoilers.forEach((element) => {
-    element.classList.remove("spoiler");
-  });
-}
 </script>
 
 <template>
