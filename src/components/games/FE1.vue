@@ -10,6 +10,14 @@ onMounted(() => {
 function removeSpoiler(event: any) {
   event.currentTarget.classList.remove("spoiler");
 }
+
+function revealAllSpoilers(event: any) {
+  let spoilers = Array.from(document.getElementsByClassName("spoiler"));
+
+  spoilers.forEach((element) => {
+    element.classList.remove("spoiler");
+  });
+}
 </script>
 
 <template>
@@ -95,7 +103,9 @@ function removeSpoiler(event: any) {
               Click on them or the button below to reveal their information at
               your discretion.
             </p>
-            <button>Reveal all Spoiler-tagged Entries</button>
+            <button @click="revealAllSpoilers($event)">
+              Reveal all Spoiler-tagged Entries
+            </button>
           </caption>
           <thead>
             <tr>
@@ -107,263 +117,649 @@ function removeSpoiler(event: any) {
           <tbody>
             <tr>
               <td>1</td>
-              <td>Marth</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Marth</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Caeda</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Caeda</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Jagen</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Jagen</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Cain</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Cain</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Abel</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Abel</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Draug</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Draug</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Gordon</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Gordon</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>1</td>
-              <td>Wrys</td>
-              <td>Visit the western village with Marth</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Wrys</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Visit the western village with Marth</span
+                >
+              </td>
             </tr>
             <tr>
               <td>2</td>
-              <td>Ogma</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Ogma</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>2</td>
-              <td>Barst</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Barst</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>2</td>
-              <td>Bord</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Bord</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>2</td>
-              <td>Cord</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Cord</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>2</td>
-              <td>Castor</td>
-              <td>Enemy, talk with Caeda</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Castor</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Caeda</span
+                >
+              </td>
             </tr>
             <tr>
               <td>2</td>
-              <td>Darros</td>
-              <td>Enemy, talk with Marth</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Darros</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Marth</span
+                >
+              </td>
             </tr>
             <tr>
               <td>3</td>
-              <td>Julian</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Julian</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>3</td>
-              <td>Lena</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Lena</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>3</td>
-              <td>Navarre</td>
-              <td>Enemy, talk with Caeda</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Navarre</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Caeda</span
+                >
+              </td>
             </tr>
             <tr>
               <td>4</td>
-              <td>Merric</td>
-              <td>Visit the northern village with Marth</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Merric</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Visit the northern village with Marth</span
+                >
+              </td>
             </tr>
             <tr>
               <td>4</td>
-              <td>Matthis</td>
-              <td>Enemy, talk with Lena</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Matthis</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Lena</span
+                >
+              </td>
             </tr>
             <tr>
               <td>5</td>
-              <td>Hardin</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Hardin</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>5</td>
-              <td>Wolf</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Wolf</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>5</td>
-              <td>Sedgar</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Sedgar</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>5</td>
-              <td>Roshea</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Roshea</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>5</td>
-              <td>Vyland</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Vyland</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>5</td>
-              <td>Wendell</td>
-              <td>Enemy, talk with Marth or Merric</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Wendell</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Marth or Merric</span
+                >
+              </td>
             </tr>
             <tr>
               <td>6</td>
-              <td>Rickard</td>
-              <td>Enemy, talk with Marth or Julian</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Rickard</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Marth or Julian</span
+                >
+              </td>
             </tr>
             <tr>
               <td>7</td>
-              <td>Bantu</td>
-              <td>Visit the village with Marth</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Bantu</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Visit the village with Marth</span
+                >
+              </td>
             </tr>
             <tr>
               <td>8</td>
-              <td>Caesar</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Caesar</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>8</td>
-              <td>Radd</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Radd</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>8</td>
-              <td>Roger</td>
-              <td>Enemy, talk with Caeda</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Roger</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Caeda</span
+                >
+              </td>
             </tr>
             <tr>
               <td>9</td>
-              <td>Jeorge</td>
-              <td>Visit the village with Marth</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Jeorge</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Visit the village with Marth</span
+                >
+              </td>
             </tr>
             <tr>
               <td>10</td>
-              <td>Maria</td>
-              <td>Enemy, talk with Marth</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Maria</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Marth</span
+                >
+              </td>
             </tr>
             <tr>
               <td>10</td>
-              <td>Minerva</td>
-              <td>Enemy, talk with Marth, Maria must be recruited already</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Minerva</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Marth, Maria must be recruited already</span
+                >
+              </td>
             </tr>
             <tr>
               <td>11</td>
-              <td>Linde</td>
-              <td>Visit the village with Marth</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Linde</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Visit the village with Marth</span
+                >
+              </td>
             </tr>
             <tr>
               <td>11</td>
-              <td>Jake</td>
-              <td>Enemy, talk with Caeda</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Jake</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Caeda</span
+                >
+              </td>
             </tr>
             <tr>
               <td>12</td>
-              <td>Midia</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Midia</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>12</td>
-              <td>Dolph</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Dolph</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>12</td>
-              <td>Macellan</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Macellan</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>12</td>
-              <td>Tomas</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Tomas</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>12</td>
-              <td>Boah</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Boah</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>13</td>
-              <td>Beck</td>
-              <td>Visit the village with Marth</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Beck</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Visit the village with Marth</span
+                >
+              </td>
             </tr>
             <tr>
               <td>13</td>
-              <td>Astram</td>
-              <td>Enemy, talk with Midia</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Astram</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Midia</span
+                >
+              </td>
             </tr>
             <tr>
               <td>14</td>
-              <td>Palla</td>
-              <td>Enemy, talk with Marth</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Palla</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Marth</span
+                >
+              </td>
             </tr>
             <tr>
               <td>14</td>
-              <td>Catria</td>
-              <td>Enemy, talk with Marth</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Catria</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Marth</span
+                >
+              </td>
             </tr>
             <tr>
               <td>16</td>
-              <td>Arran</td>
-              <td>Visit the village with Marth*</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Arran</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Visit the village with Marth*</span
+                >
+              </td>
             </tr>
             <tr>
               <td>16</td>
-              <td>Samson</td>
-              <td>Visit the village with Marth*</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Samson</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Visit the village with Marth*</span
+                >
+              </td>
             </tr>
             <tr>
               <td>16</td>
-              <td>Xane</td>
-              <td>Enemy, talk with Marth</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Xane</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Marth</span
+                >
+              </td>
             </tr>
             <tr>
               <td>18</td>
-              <td>Est</td>
-              <td>Enemy, talk with Marth</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Est</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Marth</span
+                >
+              </td>
             </tr>
             <tr>
               <td>19</td>
-              <td>Tiki</td>
-              <td>Enemy, talk with Bantu</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)">Tiki</span>
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Bantu</span
+                >
+              </td>
             </tr>
             <tr>
               <td>20</td>
-              <td>Lorenz</td>
-              <td>Enemy, talk with Caeda</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Lorenz</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Enemy, talk with Caeda</span
+                >
+              </td>
             </tr>
             <tr>
               <td>24</td>
-              <td>Elice</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Elice</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
             <tr>
               <td>25</td>
-              <td>Gotoh</td>
-              <td>Automatically at beginning of chapter</td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Gotoh</span
+                >
+              </td>
+              <td>
+                <span class="spoiler" @click="removeSpoiler($event)"
+                  >Automatically at beginning of chapter</span
+                >
+              </td>
             </tr>
           </tbody>
         </table>
