@@ -1,15 +1,12 @@
 <script setup lang="ts">
 import { inject, onMounted } from "vue";
+import { removeSpoiler } from "../../spoilers.ts";
 
 const splash = inject("splash") as any;
 
 onMounted(() => {
   splash.value = document.querySelector(".splash-img");
 });
-
-function removeSpoiler(event: any) {
-  event.currentTarget.classList.remove("spoiler");
-}
 </script>
 
 <template>

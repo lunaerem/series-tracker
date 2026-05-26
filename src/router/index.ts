@@ -6,6 +6,7 @@ import Games from "../components/Games.vue";
 import NR from "../components/games/NR.vue";
 import NA from "../components/games/NA.vue";
 import KH from "../components/games/KH.vue";
+import FE1 from "../components/games/FE1.vue";
 
 import NotFound from "../error/NotFound.vue";
 
@@ -18,6 +19,7 @@ const router = createRouter({
     { path: "/games/NieR-Replicant", component: NR },
     { path: "/games/Kingdom-Hearts", component: KH },
     { path: "/games/NieR-Automata", component: NA },
+    { path: "/games/Fire-Emblem-1", alias: "/games/fe1", component: FE1 },
     { path: "/:pathMatch(.*)*", name: "NotFound", component: NotFound },
   ],
   scrollBehavior(to, from, savedPosition) {

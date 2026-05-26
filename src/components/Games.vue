@@ -39,6 +39,15 @@ onMounted(() => {
         >
           NieR: Automata
         </RouterLink>
+        <RouterLink
+          class="game active-live"
+          to="/games/Fire-Emblem-1"
+          draggable="false"
+          id="fe1"
+        >
+          Fire Emblem Shadow Dragon <br />
+          and the Blade of Light
+        </RouterLink>
         <div class="game" draggable="false" id="bt">
           Blossom Tales: The Sleeping King <br />
           Coming Soon...
@@ -186,6 +195,11 @@ onMounted(() => {
 
 #vu {
   background-image: url("../assets/splash/vu.svg");
+}
+
+#fe1 {
+  background-image: url("../assets/splash/fe1.svg");
+  background-position: 90%;
 }
 
 @media (orientation: portrait) {
