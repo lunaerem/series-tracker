@@ -47,6 +47,8 @@ onMounted(() => {
         </li>
         <li>
           Keep Caeda alive through the entire game if you want the best ending
+          (Really it is just solid advice to keep every unit alive, as a fair
+          few are required to recruit others in future chapters)
         </li>
         <li>
           Arenas are infinite in this game, so they are an easy source of
