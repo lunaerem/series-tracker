@@ -46,9 +46,13 @@ onMounted(() => {
           the class's base values
         </li>
         <li>
-          Keep Caeda alive through the entire game if you want the best ending
-          (Really it is just solid advice to keep every unit alive, as a fair
-          few are required to recruit others in future chapters)
+          If you are going for 100% completion, recruit and keep all units alive
+          throughout the game (More details in the Chapter Guide section below),
+          as they are the only permanently missable unique thing in the game. A
+          fair few are required to recruit others in future chapters. Units must
+          be recruited in the chapter that they appear, and if the recruitable
+          unit is killed or the map is finished before they are acquired, the
+          character is permanently lost.
         </li>
         <li>
           Arenas are infinite in this game, so they are an easy source of
@@ -72,18 +76,6 @@ onMounted(() => {
         in the chapter that they appear. If the recruitable unit is killed or
         the map is finished before they are acquired, the character is
         permanently lost.
-      </p>
-      <p>
-        Like most Fire Emblem games, the majority of the adventure's playable
-        units will be obtained during a map through various methods. Some
-        characters are given at the start of a map automatically, others are
-        only obtained by visiting certain villages with Marth, and there are
-        some units that can only be recruited by talking to them as an enemy.
-        The latter are a bit more complicated in Shadow Dragon and the Blade of
-        Light. Sometimes an enemy unit can be recruited by moving a specific
-        character next to them and selecting the "Talk" option, while other
-        times you must wait for them to come to you and have them initiate the
-        conversation.
       </p>
       <div class="table-wrapper" style="padding: 1rem">
         <table class="long-t">
@@ -760,6 +752,532 @@ onMounted(() => {
             </tr>
           </tbody>
         </table>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="set-ratio">
+      <h2>Chapter Guide</h2>
+      <p>
+        The Chapter Guide is a full breakdown of each Chapter and how to get the
+        full, permanently missable, rewards from them, notably the recruitable
+        units. Some of the recruitable characters require specific units to be
+        brought into the Chapter, which are noted, but the actual method for
+        recruiting each Chapter's units in addition to any other notes regarding
+        the map are spoiler tagged to essentially act as hints and not
+        immediately give away everything in case someone wishes to experiment
+        first.
+      </p>
+      <button
+        class="button"
+        style="cursor: pointer; margin-bottom: 1rem"
+        @click="revealAllSpoilers()"
+      >
+        Reveal all Spoiler-tagged Entries
+      </button>
+      <div>
+        <h3>Chapter 1</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Caeda (Automatically at beginning of Chapter)</span
+            >
+          </li>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Jagen (Automatically at beginning of Chapter)</span
+            >
+          </li>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Cain (Automatically at beginning of Chapter)</span
+            >
+          </li>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Abel (Automatically at beginning of Chapter)</span
+            >
+          </li>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Draug (Automatically at beginning of Chapter)</span
+            >
+          </li>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Gordon (Automatically at beginning of Chapter)</span
+            >
+          </li>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Wrys (Visit the western village with Marth)</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Chapter 2</h3>
+        <p><u>Number of Recruitable Characters:</u> 6</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 3</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 4</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 5</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 6</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 7</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 8</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 9</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 10</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 11</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 12</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 13</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 14</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 15</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 16</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 17</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 18</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 19</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 20</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 21</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 22</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 23</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 24</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
+      </div>
+      <div>
+        <h3>Chapter 25</h3>
+        <p><u>Number of Recruitable Characters:</u> 8</p>
+        <p><u>Characters to Bring into Chapter for Full Rewards:</u> N/A</p>
+        <p><u>Recruitable Characters:</u></p>
+        <ul>
+          <li>
+            <span class="spoiler" @click="removeSpoiler($event)"
+              >Marth (Automatically at beginning of Chapter)</span
+            >
+          </li>
+        </ul>
+        <p>
+          <u>Notes:</u>
+          <span class="spoiler" @click="removeSpoiler($event)">
+            Placeholder</span
+          >
+        </p>
       </div>
     </div>
   </section>
