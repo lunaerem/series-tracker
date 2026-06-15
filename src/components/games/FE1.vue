@@ -71,17 +71,24 @@ onMounted(() => {
     <div class="set-ratio">
       <h2>Chapter Guide</h2>
       <p>
-        The Chapter Guide is a full breakdown of each Chapter and how to get the
-        full, permanently missable, rewards from them, notably the recruitable
-        units. Some of the recruitable characters require specific units to be
-        brought into the Chapter, which are noted, but the actual method for
-        recruiting each Chapter's units in addition to any other notes regarding
-        the map are spoiler tagged to essentially act as hints and not
-        immediately give away everything to allow for initial experimentation.
+        This Chapter Guide is a full breakdown of each Chapter and how to get
+        the full, permanently missable, rewards from them, notably the
+        recruitable units. Some of the recruitable characters require specific
+        units to be brought into the Chapter, which are noted (Excluding Marth,
+        since he is required to be deployed in every Chapter), but the actual
+        method for recruiting each Chapter's units in addition to any other
+        notes regarding the map are spoiler tagged to essentially act as hints
+        and not immediately give away everything, allowing for initial
+        experimentation.
       </p>
       <button
         class="button"
-        style="cursor: pointer; margin-bottom: 1rem"
+        style="
+          cursor: pointer;
+          margin-bottom: 1rem;
+          display: block;
+          margin: 0 auto;
+        "
         @click="revealAllSpoilers()"
       >
         Reveal all Spoiler-tagged Entries
@@ -255,7 +262,10 @@ onMounted(() => {
       <div>
         <h3>Chapter 6</h3>
         <p><u>Number of Recruitable Characters:</u> 1</p>
-        <p><u>Characters to Bring into Chapter for Full Rewards:</u> Lena</p>
+        <p>
+          <u>Characters to Bring into Chapter for Full Rewards:</u> Lena and/or
+          Wendell
+        </p>
         <p><u>Recruitable Characters:</u></p>
         <ul>
           <li>
@@ -269,8 +279,8 @@ onMounted(() => {
           <u>Notes:</u>
           <span class="spoiler" @click="removeSpoiler($event)">
             The only way to get the chest furthest left is by using a Warp staff
-            to block it with a unit. Lena should be the only unit at this point
-            in the game capable of using staves.</span
+            to block it with a unit. Lena and Wendell should be the only units
+            at this point in the game capable of using staves.</span
           >
         </p>
       </div>
@@ -531,7 +541,9 @@ onMounted(() => {
         <p>
           <u>Notes:</u>
           <span class="spoiler" @click="removeSpoiler($event)">
-            Placeholder. Write about the orbs</span
+            It is absolutely critical that you retrieve the Starsphere from the
+            northern-most chest and the Lightsphere from one of the
+            thieves!</span
           >
         </p>
       </div>
@@ -547,12 +559,6 @@ onMounted(() => {
             >
           </li>
         </ul>
-        <p>
-          <u>Notes:</u>
-          <span class="spoiler" @click="removeSpoiler($event)">
-            Placeholder</span
-          >
-        </p>
       </div>
       <div>
         <h3>Chapter 21</h3>
@@ -563,7 +569,10 @@ onMounted(() => {
           <span class="spoiler" @click="removeSpoiler($event)">
             In the upper right corner of the map, there is a forest tile
             surrounded by mountains. Going there with the VIP Card allows access
-            to another secret shop.</span
+            to another secret shop. Also, make sure that you have given Marth
+            the Lightsphere and Starsphere before ending the Chapter (It is not
+            strictly necessary, but it helps speed some things up in the next
+            Chapter).</span
           >
         </p>
       </div>
@@ -574,7 +583,9 @@ onMounted(() => {
         <p>
           <u>Notes:</u>
           <span class="spoiler" @click="removeSpoiler($event)">
-            Placeholder</span
+            Make sure that Marth is holding both the Lightsphere and Starsphere
+            in his inventory before visiting the village to receive a special
+            reward.</span
           >
         </p>
       </div>
@@ -585,7 +596,10 @@ onMounted(() => {
         <p>
           <u>Notes:</u>
           <span class="spoiler" @click="removeSpoiler($event)">
-            Placeholder</span
+            Make sure that you defeat the real Gharnef and retrieve Falchion in
+            this chapter. Additionally, there is another secret shop that can be
+            accessed by unlocking the door on the tile behind the throne and
+            standing on it with the VIP Card.</span
           >
         </p>
       </div>
