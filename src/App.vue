@@ -36,14 +36,6 @@ const handleWindowScroll = () => {
 };
 
 window.addEventListener("scroll", handleWindowScroll);
-
-function removeFooter() {
-  const footerToRemove = document.getElementById("warning-footer");
-
-  if (footerToRemove !== null) {
-    footerToRemove.remove();
-  }
-}
 </script>
 
 <template>
@@ -76,25 +68,6 @@ function removeFooter() {
   <main>
     <RouterView />
   </main>
-  <div id="warning-footer">
-    <div
-      class="set-ratio"
-      style="display: flex; flex-direction: column; align-items: center"
-    >
-      <h2 style="margin-bottom: 0"><b>! Note !</b></h2>
-      <p style="text-align: center">
-        This website is currently undergoing a significant rewrite, so page
-        addresses, content, and overall appearance are subject to change!
-      </p>
-      <button
-        class="button"
-        @click="removeFooter()"
-        style="margin-bottom: 1rem; cursor: pointer"
-      >
-        I Understand
-      </button>
-    </div>
-  </div>
   <footer>
     <div id="main-footer" class="set-ratio">
       <a target="_blank" href="https://lunaerem.github.io/personal-website/"
