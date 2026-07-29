@@ -35,34 +35,29 @@ onMounted(() => {
           Only Marth can visit villages (The multi-tile buildings with the walls
           in front), but anyone can visit the smaller buildings. Try to visit as
           many villages and buildings as possible because they give good rewards
-          and drop hints toward game mechanics, stories, and secrets
-        </li>
-        <li>
-          Save Warp staves until you truly need them, as they are rather limited
-          in the game
+          and drop hints toward game mechanics, stories, and secrets.
         </li>
         <li>
           Promote units as soon as possible because promotion raises stats to
-          the class's base values
+          the class's base values.
         </li>
         <li>
           If you are going for 100% completion, recruit and keep all units alive
           throughout the game (More details in the Chapter Guide section below),
-          as they are the only permanently missable unique thing in the game. A
-          fair few are required to recruit others in future chapters. Units must
-          be recruited in the chapter that they appear, and if the recruitable
-          unit is killed or the map is finished before they are acquired, the
-          character is permanently lost.
+          since a fair few are required to recruit others in future Chapters.
+          Units must be recruited in the chapter in which they appear, and if
+          the recruitable unit is killed or the map is finished before they are
+          acquired, the character is permanently lost.
         </li>
         <li>
           Arenas are infinite in this game, so they are an easy source of
-          farming
+          farming.
         </li>
         <li>
           Thieves who steal items from chests do not drop the items when
           defeated, unlike later entries in the series. Either block the chests
           with units or get to them before the thieves to get full rewards (Warp
-          staves are especially useful for these circumstances)
+          staves are especially useful for these scenarios).
         </li>
       </ul>
     </div>
@@ -71,15 +66,14 @@ onMounted(() => {
     <div class="set-ratio">
       <h2>Chapter Guide</h2>
       <p>
-        This Chapter Guide is a full breakdown of each Chapter and how to get
-        the full, permanently missable, rewards from them, notably the
-        recruitable units. Some of the recruitable characters require specific
-        units to be brought into the Chapter, which are noted (Excluding Marth,
-        since he is required to be deployed in every Chapter), but the actual
-        method for recruiting each Chapter's units in addition to any other
-        notes regarding the map are spoiler tagged to essentially act as hints
-        and not immediately give away everything, allowing for initial
-        experimentation.
+        This Chapter Guide is a full breakdown of each map and how to aquire the
+        full, permanently missable rewards in them, notably the recruitable
+        units. Some recruitable characters require specific units to be brought
+        into the Chapter, which are noted (Excluding Marth, since he is required
+        to be deployed in every Chapter). However, the actual method for
+        recruiting each Chapter's units, in addition to any other notes
+        regarding the map, are spoiler-tagged to not immediately give away
+        everything, allowing for initial experimentation.
       </p>
       <button
         class="button"
@@ -278,9 +272,10 @@ onMounted(() => {
         <p>
           <u>Notes:</u>
           <span class="spoiler" @click="removeSpoiler($event)">
-            The only way to get the chest furthest left is by using a Warp staff
-            to block it with a unit. Lena and Wendell should be the only units
-            at this point in the game capable of using staves.</span
+            The only way to get the furthest left chest is by using a Warp staff
+            to block it with a unit before the enemy thief can reach it. Lena
+            and Wendell should be the only units at this point in the game
+            capable of using staves.</span
           >
         </p>
       </div>
@@ -456,7 +451,7 @@ onMounted(() => {
         <p>
           <u>Notes:</u>
           <span class="spoiler" @click="removeSpoiler($event)">
-            Do NOT attack or get in the range of the enemy Bishop guarding the
+            Do NOT attack or get in range of the enemy Bishop guarding the
             chests. He is invulnerable to all attacks, but will have a scripted
             retreat on turn 8. So just wait until he leaves before looting that
             corner of the map.
@@ -542,7 +537,7 @@ onMounted(() => {
           <u>Notes:</u>
           <span class="spoiler" @click="removeSpoiler($event)">
             It is absolutely critical that you retrieve the Starsphere from the
-            northern-most chest and the Lightsphere from one of the
+            northernmost chest and the Lightsphere from one of the
             thieves!</span
           >
         </p>
@@ -569,8 +564,8 @@ onMounted(() => {
           <span class="spoiler" @click="removeSpoiler($event)">
             In the upper right corner of the map, there is a forest tile
             surrounded by mountains. Going there with the VIP Card allows access
-            to another secret shop. Also, make sure that you have given Marth
-            the Lightsphere and Starsphere before ending the Chapter (It is not
+            to another secret shop. Also, make sure you have given Marth the
+            Lightsphere and Starsphere before ending the Chapter (It is not
             strictly necessary, but it helps speed some things up in the next
             Chapter).</span
           >
@@ -620,7 +615,7 @@ onMounted(() => {
           <span class="spoiler" @click="removeSpoiler($event)">
             In the bottom left corner of the map, there is an empty field tile
             surrounded by mountains. Going there with the VIP Card allows access
-            to another secret shop.</span
+            to the final secret shop.</span
           >
         </p>
       </div>
