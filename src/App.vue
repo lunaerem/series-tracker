@@ -117,6 +117,13 @@ window.addEventListener("scroll", handleWindowScroll);
 </template>
 
 <style scoped>
+#warning-footer {
+  background: rgba(153, 0, 0, 0.87);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 #nav-header {
   position: fixed;
   top: 0;
