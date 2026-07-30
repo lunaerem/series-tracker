@@ -53,7 +53,9 @@ onMounted(() => {
         information (e.g., dead links or factually incorrect data) or with the
         website's operations, feel free to reach out to me so they can be
         corrected. Currently, the primary way to do so is to open an
-        <a target="_blank" href="https://github.com/lunaerem/series-tracker"
+        <a
+          target="_blank"
+          href="https://github.com/lunaerem/completion-compendium/issues"
           >Issue in the GitHub Repository</a
         >, but I am considering adding a feedback form later on. Also, feel free
         to reach out with any comments, suggestions, or other ideas.

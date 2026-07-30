@@ -76,7 +76,7 @@ window.addEventListener("scroll", handleWindowScroll);
       <a
         id="src-btn"
         class="button"
-        href="https://github.com/lunaerem/series-tracker"
+        href="https://github.com/lunaerem/completion-compendium"
         target="_blank"
         draggable="false"
         >Website Source</a
