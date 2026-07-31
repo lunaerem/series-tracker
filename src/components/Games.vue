@@ -25,6 +25,14 @@ onMounted(() => {
       <div class="game-grid">
         <RouterLink
           class="game active-live"
+          to="/games/miscellaneous"
+          draggable="false"
+          id="nr"
+        >
+          Games with Little to No Missables
+        </RouterLink>
+        <RouterLink
+          class="game active-live"
           to="/games/NieR-Replicant"
           draggable="false"
           id="nr"

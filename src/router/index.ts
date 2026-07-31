@@ -3,6 +3,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../components/Home.vue";
 import About from "../components/About.vue";
 import Games from "../components/Games.vue";
+import Misc from "../components/games/Misc.vue";
 import NR from "../components/games/NR.vue";
 import NA from "../components/games/NA.vue";
 import KH from "../components/games/KH.vue";
@@ -16,6 +17,7 @@ const router = createRouter({
     { path: "/", alias: "/home", component: Home },
     { path: "/about", component: About },
     { path: "/games", component: Games },
+    { path: "/games/miscellaneous", alias: "/games/misc", component: Misc },
     { path: "/games/NieR-Replicant", component: NR },
     { path: "/games/Kingdom-Hearts", component: KH },
     { path: "/games/NieR-Automata", component: NA },
